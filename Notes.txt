@@ -1,0 +1,85 @@
+CodeClub
+SPELLSLIDER
+
+Janne Eskola
+Antti Nousiainen
+Toni Kuosmanen
+Essi Viippola
+
+Unity3D
+
+Pohja: Android + ios + WindowsPhone
+
+WarTunes-tyyppinen "tappelu"
+
+Ukko juoksee ja tietyssä vaiheessa tulee tietty örkki
+
+Velho juoksee leveliä eteenpäin
+Vastaan voi tulla
+- örksy
+- arkku
+- portti
+	- Sankari meni portista iskulla 1000000-pelissä
+- vesi
+	- piirretään vene
+- tuli
+	- piirretään vesipisara
+- kentän lopussa bossi
+	- miten saadaan vaikeammaksi kuin normiörksy?
+	- ei ole ehkä hyvä kasvattaa vain helaa
+
+Inspiraatio:
+- 1000000-videogame
+- Bug Worm Adventures
+- You Must Build a Boat
+
+Toni haluaa pienen velhon alas
+
+Level-pohjainen
+
+Esineet
+- item-valikko?
+- potion
+- jäädytys
+- shield
+
+hela = aika?
+
+Tappelu
+- Jos velho on kokonaan oikealla, niin pelaaja on voittanut
+- Jos veljo on kokonaan vasemmalla, örksy on voittanut
+- Multiplier?
+- Itemit?
+
+Kuvio voisi vähähtää hetken ruudulla
+
+Matkiminen?
+
+tavalliset örksyt + bossit
+- vihollinen näkymättömänä
+	- isku pitää ajoittaa siten, että isku päästetään irti kun örksy on näkyvissä
+- peilikuvaörksy
+- magmaörksy
+	- kivi + tuli + kivi
+- pimeä örksy
+
+Aikaraja?
+
+Miniquestit
+- tapa 10, 100, 1000, 1000000 örksyä
+- multiplier
+- ...
+
+Tasovalikko
+- 1000000:ssa oli hienot rappuset :) Kivempi kuin tavallinen numerovalikko
+
+Gridi
+- Yksi katkeamaton kuvio VS voidaan piirtää useita erillisiä viivoja + submit
+
+Kentissä kaikilla örksyillä jokin elementti
+
+Avoimia kysymyksiä:
+- näkyykö "oikea isku" gridissä haaleana hetken
+- katkeamaton viiva vai monta viivaa + submit
+
+Taustatarina?
