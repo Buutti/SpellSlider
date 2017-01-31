@@ -1,0 +1,10 @@
+Docs/mockup.xcf
+SpellSlider/Library/metadata/
+SpellSlider/Library/EditorUserBuildSettings.asset
+SpellSlider/Library/EditorUserSettings.asset
+*.bin
+*.log
+SpellSlider/Library/CurrentLayout.dwlt
+SpellSlider/Library/CrashedAssetImports.txt
+SpellSlider/Temp/
+SpellSlider/ProjectSettings/
