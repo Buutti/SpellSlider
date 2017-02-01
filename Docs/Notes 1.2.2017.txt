@@ -1,0 +1,89 @@
+Martta Kerkelä
+Antti Nousiainen
+Janne Eskola
+Tapio Kursula
+Essi Viippola
+
+- Jos kuviossa jokin reuna on vahvennettu, niin se täytyy piirtää kahdesti
+
+- bossi
+	- comboista ja nopeatempoisuudesta paljon lämää
+	- rytmitys
+
+- mitä tapahtuu kuolemassa?
+	- alkaako alusta vai hypätäänkö esim. 5 sec taaksepäin
+	- savepointit
+		- tämä sovittiin
+
+- rahat
+	- itemien osto päävalikosta
+	- arkuista
+	- kentässä maassa
+	- örksyistä
+	- levelin suorittaminen ensimmäistä kertaa
+
+- väärästä kuviosta sakottaminen
+
+- onnistunut combo	
+	- miten palkitaan pelaaja?
+	- rahoilla
+
+- tappelu
+	- näkyykö kuvio
+		- gridissä
+		- vihun pään päällä
+		- vihun päällä
+	- kuoleeko vihollinen yhdellä iskulla?
+	- kerralla monta vihollista näkyvissä?
+
+- pystytila/leveystila puhelimessa
+
+- gridi
+	- 3x3 vai 4x3
+
+- kysymysmerkki
+	- piirretään kysymysmerkki 
+	- pelaaja ei pysähdy tähän
+	- esim. seinässä halkeama tai kimallus
+
+- epäonnistuminen
+	- pelaaja piirtää väärän kuvion
+
+- tarina
+	- tohelo velho, joka on yrittänyt tehdä taikaa ja epäonnistunut
+	- yrittää päästä karkuun jotakin
+	- elementit eivät kuole, vaan muuttuvat takaisin normaaleiksi
+	- epäonnistuneen taian jälkeen velho lentää kauas (vasemmalle)
+	- yrittää päästä takaisin lähtöpaikkaan
+	- taian seurauksena olisi voinut syntyä vaikka musta maaginen esine
+
+- vasen reuna vs sydänsysteemi
+
+- päävalikko
+	- levelit
+	- kaupat
+		- taikasauvat
+		- potut
+	- voisi olla kartta ylhäältäpäin
+	- mahdollisuus pelata edellisiä leveleitä?
+
+
+- kieli: englanti
+	- jos aikaa jää, niin myös suomi
+
+- itemit jätetään myöhemmäksi
+	- muutama vain käytössä
+		- pankkiholvi tai valitaan kolme poweruppia
+
+- örksyjä liukuhihnalta
+	- pelaaja pysähtyy vain jos on huono
+	- ei koske bossia
+
+- grafiikat
+	- piirtopöytä
+	- akrylliväreillä jokainen ruumiinosa erikseen
+
+- taustamusiikki ja ääniefektit
+
+
+
