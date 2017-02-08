@@ -1,10 +1,36 @@
-Docs/mockup.xcf
-SpellSlider/Library/metadata/
-SpellSlider/Library/EditorUserBuildSettings.asset
-SpellSlider/Library/EditorUserSettings.asset
-*.bin
-*.log
-SpellSlider/Library/CurrentLayout.dwlt
-SpellSlider/Library/CrashedAssetImports.txt
-SpellSlider/Temp/
-SpellSlider/ProjectSettings/
+
+# =============== #
+# Unity Generated #
+# =============== #
+Temp/
+Obj/
+UnityGenerated/
+Library/
+Assets/AssetStoreTools*
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
