@@ -1,0 +1,37 @@
+SpellSlider
+Tapaamismuistio
+10.2.2017
+
+Paikalla: Toni, Antti, Tapio, Martta, Essi
+
+Koodauskielenä C#
+Kommentit ja koodi englanniksi
+
+Unity-demot
+- Unityn kotisivuilla: 2D Roguelike
+
+Gridin toiminta
+- nappien kohdalle tulee collider
+- aktivoitujen pisteiden välille
+	- syttyy valo
+	- pieni ääni
+	- värinävaste (valmiiksi Unityssä)
+- koodataan pisteiden väliset välit
+	- tällöin voidaan helpommin verrata valmiita kuvioita
+	- järjestyksellä ei tällöin ole väliä
+
+Pikselitaide vs käsinpiirretty
+- pikselitaide voitolla
+- toteutetaan aluksi pikseleillä, muokataan, jos nähdään tarpeelliseksi
+- Essi vastuussa myöskin pikseleistä
+	- Essi lataa gimp
+
+World Map
+- lineaarinen
+- maailmankartta, jossa piste/velho kulkee
+
+Save-valikko
+- Laitekohtainen vai enemmän käyttäjiä?
+	- kallistutaan laitekohtaiseen näillä näkymin
+
+Työnjako
