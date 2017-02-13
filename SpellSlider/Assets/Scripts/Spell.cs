@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class Spell : MonoBehaviour {
+
+    public Text debug;
+    SpriteRenderer sr;
+    int fingerId = -1;
+
+	// Use this for initialization
+	void Start () {
+        sr = GetComponent<SpriteRenderer>();
+        sr.enabled = false;
+	}
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        HandleTouch();
+    }
+
+    // Get touch and move spell cursor
+    private void HandleTouch()
+    {
+        if (fingerId < 0 && Input.touchCount > 0)
+        {
+            // Get first touch from Input.touches
+            fingerId = Input.touches[0].fingerId;
+        }
+        else if (fingerId >= 0) 
+        {
+            try
+            {
+                Touch touch = Input.GetTouch(fingerId);
+                switch (touch.phase)
+                {
+                    case TouchPhase.Moved:
+                    // Finger moved -> move cursor
+                        sr.enabled = true;
+                        debug.text = getTouchMessage(touch);
+                        moveSpell(touch);
+                        break;
+
+                    case TouchPhase.Ended:
+                    // Touch ended -> Reset fingerId and hide cursor
+                        debug.text = "Touch ended";
+                        fingerId = -1;
+                        sr.enabled = false ;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            catch (ArgumentException)
+            {
+                // Finger index out of bounds
+                // Reset finger id
+                fingerId = -1;
+                // Disable spell cursor
+                sr.enabled = false;
+            }
+        }
+    }
+
+    string getTouchMessage(Touch touch)
+    {
+        string message = "";
+        message += "ID: " + touch.fingerId + "\n";
+        message += "Pos X: " + touch.position.x + "\n";
+        message += "Pos Y: " + touch.position.y + "\n";
+
+        return message;
+    }
+
+
+    /// <summary>
+    /// Moves the spell cursor to touch position
+    /// </summary>
+    /// <param name="touch">Finger touch for moving the spell</param>
+    void moveSpell(Touch touch) {
+        
+        // Calculate transform factor for screen to game world conversion
+        // Note! Bottom left corner of camera must be placed at origin!
+        float transformFactor = 1 / (Screen.height / (2 * Camera.main.orthographicSize));
+        gameObject.transform.localPosition = new Vector3(
+            touch.position.x * transformFactor,
+            touch.position.y * transformFactor,
+            gameObject.transform.localPosition.z
+        );
+    }
+}
