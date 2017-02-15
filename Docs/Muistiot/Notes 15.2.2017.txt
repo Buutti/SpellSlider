@@ -1,0 +1,42 @@
+Notes 15.2.2017
+
+Paikalla: Martta, Toni, Antti, Essi
+
+SpellGrid
+- kuvioiden nauhoittaminen
+- ei ota kantaa siihen, ovatko kuviot oikein
+
+1. SPELLGRID
+- vanhempi
+
+1.1 SPELLCURSOR
+- toimii kursorina
+
+1.2 SPELLBUTTONS
+- napit 1-9
+- touchcount
+	- laskee, montako kertaa kutakin nappia on "painettu"
+- sijainti
+	- ruudun koko = 40 x 70
+	- 10 reunasta, 10 välillä
+
+1.3 SPELLLINES
+- viivat nappien välillä
+- kiellot:
+	- nappien yhdistäminen gridin ulkopuolelta
+	- 
+
+R = Rivi
+S = Sarake
+
+R + - 1 & S + - 1 |
+R + - 1 & S + - 2 |
+R + - 2 & S + - 1
+
+Ensi viikolla:
+- SpellGridin laajentaminen
+	- mitä tapahtuu, kun kosketus alkaa ja loppuu
+	- ei kerätä nappeja vaan nappien välisiä viivoja
+
+
+

@@ -24,7 +24,6 @@ public class ButtonLights : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
         HandleTouch();
 
 	}
@@ -68,7 +67,6 @@ public class ButtonLights : MonoBehaviour {
                 }
 
             }
-           
 
             catch (ArgumentException)
             {
