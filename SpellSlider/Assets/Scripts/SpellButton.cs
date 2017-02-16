@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SpellButton : MonoBehaviour {
 
-    public int[] Coord; 
+    /// <summary>
+    /// Position of the button on the spell grid
+    /// </summary>
+    public Vector2 Position; 
 
     // Send message to SpellGrid on collision
     private void OnTriggerEnter2D(Collider2D collision)

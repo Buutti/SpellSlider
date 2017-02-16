@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0100000001000000
+  Position: {x: 1, y: 1}
 --- !u!58 &423338714
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0200000001000000
+  Position: {x: 1, y: 2}
 --- !u!212 &433185645
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0300000002000000
+  Position: {x: 2, y: 3}
 --- !u!212 &532433394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0300000001000000
+  Position: {x: 1, y: 3}
 --- !u!212 &937836084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0200000002000000
+  Position: {x: 2, y: 2}
 --- !u!212 &1173589731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0300000003000000
+  Position: {x: 3, y: 3}
 --- !u!212 &1262150571
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0100000003000000
+  Position: {x: 3, y: 1}
 --- !u!212 &1332681735
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0200000003000000
+  Position: {x: 3, y: 2}
 --- !u!212 &1880852519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5075262ae9074143aae203b37d6eca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coord: 0100000002000000
+  Position: {x: 2, y: 1}
 --- !u!212 &2043012745
 SpriteRenderer:
   m_ObjectHideFlags: 0
