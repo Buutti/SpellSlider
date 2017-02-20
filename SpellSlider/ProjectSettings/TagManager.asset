@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3329192519
+    locked: 0
+  - name: SpellGridBackground
+    uniqueID: 1268342041
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

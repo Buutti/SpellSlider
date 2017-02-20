@@ -9,8 +9,7 @@ public class Background : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        resizeSpriteToScreen();
-
+        resizeSpriteToScreen(gameObject);
 	}
 	
 	// Update is called once per frame
@@ -18,16 +17,18 @@ public class Background : MonoBehaviour {
 		
 	}
 
-    void resizeSpriteToScreen() {
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+    public static void resizeSpriteToScreen(GameObject go)
+    {
+        SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
+        if(sr != null) {
+            float spriteWidth = sr.sprite.bounds.size.x;
+            float spriteHeight = sr.sprite.bounds.size.y;
 
-        float spriteWidth = sr.sprite.bounds.size.x;
-        float spriteHeight = sr.sprite.bounds.size.y;
+            float worldScreenHeight = Camera.main.orthographicSize * 2;
+            float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
 
-        float worldScreenHeight = Camera.main.orthographicSize * 2;
-        float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
-
-        transform.localScale = new Vector3(worldScreenWidth / spriteWidth,
-        worldScreenHeight / spriteHeight, 1);
+            go.transform.localScale= new Vector3(worldScreenWidth / spriteWidth,
+            worldScreenHeight / spriteHeight, 1);
+        }
     }
 }

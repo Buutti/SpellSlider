@@ -5,14 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Spell : MonoBehaviour {
+public class SpellCursor : MonoBehaviour {
 
-    public Text debug;
     SpriteRenderer sr;
     int fingerId = -1;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         sr = GetComponent<SpriteRenderer>();
         sr.enabled = false;
 	}
@@ -30,6 +29,8 @@ public class Spell : MonoBehaviour {
         {
             // Get first touch from Input.touches
             fingerId = Input.touches[0].fingerId;
+            SendMessageUpwards("TouchActivate");
+            Debug.Log("Touch began");
         }
         else if (fingerId >= 0) 
         {
@@ -41,15 +42,20 @@ public class Spell : MonoBehaviour {
                     case TouchPhase.Moved:
                     // Finger moved -> move cursor
                         sr.enabled = true;
-                        debug.text = getTouchMessage(touch);
                         moveSpell(touch);
                         break;
 
                     case TouchPhase.Ended:
                     // Touch ended -> Reset fingerId and hide cursor
-                        debug.text = "Touch ended";
                         fingerId = -1;
                         sr.enabled = false ;
+                        SendMessageUpwards("TouchEnd");
+                        break;
+
+                    case TouchPhase.Canceled:
+                        fingerId = -1;
+                        sr.enabled = false;
+                        SendMessageUpwards("TouchEnd");
                         break;
 
                     default:
@@ -88,10 +94,10 @@ public class Spell : MonoBehaviour {
         // Calculate transform factor for screen to game world conversion
         // Note! Bottom left corner of camera must be placed at origin!
         float transformFactor = 1 / (Screen.height / (2 * Camera.main.orthographicSize));
-        gameObject.transform.localPosition = new Vector3(
+        gameObject.transform.position = new Vector3(
             touch.position.x * transformFactor,
             touch.position.y * transformFactor,
-            gameObject.transform.localPosition.z
+            gameObject.transform.position.z
         );
     }
 }
