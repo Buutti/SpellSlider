@@ -7,13 +7,13 @@ using UnityEngine.UI;
 
 public class SpellCursor : MonoBehaviour {
 
-    SpriteRenderer sr;
+    Image cursorImage;
     int fingerId = -1;
 
     // Use this for initialization
     void Start () {
-        sr = GetComponent<SpriteRenderer>();
-        sr.enabled = false;
+        cursorImage = GetComponent<Image>();
+        cursorImage.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -41,20 +41,20 @@ public class SpellCursor : MonoBehaviour {
                 {
                     case TouchPhase.Moved:
                     // Finger moved -> move cursor
-                        sr.enabled = true;
+                        cursorImage.enabled = true;
                         moveSpell(touch);
                         break;
 
                     case TouchPhase.Ended:
                     // Touch ended -> Reset fingerId and hide cursor
                         fingerId = -1;
-                        sr.enabled = false ;
+                        cursorImage.enabled = false ;
                         SendMessageUpwards("TouchEnd");
                         break;
 
                     case TouchPhase.Canceled:
                         fingerId = -1;
-                        sr.enabled = false;
+                        cursorImage.enabled = false;
                         SendMessageUpwards("TouchEnd");
                         break;
 
@@ -69,7 +69,7 @@ public class SpellCursor : MonoBehaviour {
                 // Reset finger id
                 fingerId = -1;
                 // Disable spell cursor
-                sr.enabled = false;
+                cursorImage.enabled = false;
             }
         }
     }

@@ -34,6 +34,7 @@ public class SpellLine : IEquatable<SpellLine>
     {
         if (lineCount == 0)
         {
+            
             GameObject line = CreateLine(lineMaterial, Start.transform.position,
             End.transform.position, Vector3.zero);
             LinesRendered.Add(line);
@@ -63,7 +64,7 @@ public class SpellLine : IEquatable<SpellLine>
      Vector3 endPosition, Vector3 offset)
     {
         GameObject line = new GameObject();
-        line.transform.position = Start.transform.position;
+        line.transform.position = (Vector2)Start.transform.position ;
         line.AddComponent<LineRenderer>();
         LineRenderer lr = line.GetComponent<LineRenderer>();
         lr.materials = new Material[] { lineMaterial, lineMaterial, lineMaterial };
@@ -71,8 +72,9 @@ public class SpellLine : IEquatable<SpellLine>
         lr.endColor = Color.red;
         lr.startWidth = 1.2f;
         lr.endWidth = 1.2f;
-        lr.SetPosition(0, Start.transform.position + offset);
-        lr.SetPosition(1, End.transform.position + offset);
+        lr.SetPosition(0, (Vector2)Start.transform.position + (Vector2)offset);
+        lr.SetPosition(1, (Vector2)End.transform.position + (Vector2)offset);
+        //lr.useWorldSpace = false;
         return line;
     }
 

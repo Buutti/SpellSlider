@@ -37,7 +37,7 @@ public class SpellGrid : MonoBehaviour
         if (sender.touchCount == 0)
         {
             // Activate new button
-            sender.GetComponent<SpriteRenderer>().color = Color.red;
+            sender.GetComponent<Image>().color = Color.red;
             sender.Activated = true;
             sender.touchCount++;
             ActivatedButtons.Add(sender);
@@ -116,7 +116,7 @@ public class SpellGrid : MonoBehaviour
     {
         foreach (SpellButton button in ActivatedButtons)
         {
-            button.GetComponent<SpriteRenderer>().color = Color.white;
+            button.GetComponent<Image>().color = Color.white;
             button.Activated = false;
             button.touchCount = 0;
         }        
