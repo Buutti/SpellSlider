@@ -1,0 +1,54 @@
+Muistio 20.2.2017
+
+Paikalla: Antti, Tapio, Essi
+
+Miten viholliset/velho esitetään koodissa?
+- vihollisten järjestys arvotaan
+
+Tuleeko joka leveli omaan sceneen vai ladataanko samaan sceneen vaan aina
+sopiva tausta, viholliset ja musa?
+- Yksi skene, johon lisätään mm. yllämainitut ominaisuudet
+
+Miten tieto valituista varusteista siirtyy pelisceneen?
+- ??
+
+Miten voitetut rahat ja muu lootti tallennetaan?
+- tallennetaan esineet temppiin ja siirretään arkkuun, kun leveli voitetaan
+
+Päivän agenda:
+- Essi ja tapsa koodaa:
+	- liikkuva backgroud (ei ehditty)
+	- yksi hirviö (neliö)
+	- velho (kuvana)
+- Antti opettelee Unityn käyttöä
+	- SpaceShooter
+
+
+ISO NOTE!!!!
+- kaikki muutokset suoraan gittiin oikeaan kansioon
+
+Kuviot
+- jätetään toistaiseksi "vinot" viivat pois
+	- ei siis esim. 11 -> 23
+- Fixi viivojen ohittamiseen?
+	- ei 11 -> 33 suoraan
+	- voisiko hyödyntää bossitaisteluissa?
+
+Hirviöiden nopeus
+- update: 60 framea sekunnissa
+
+Bugit:
+- kameran kohdistaminen
+- kannattaa tehdä canvasella
+
+---------------------------------------------
+
+DONES:
+- siirretty GameViewin kamera oikeaan paikkaan
+- tajuttu, että monsterit katsovat sijaintinsa suhteessa GameViewiin
+- toteutettu SquareMonster
+	- liikkuu oikealta vasemmalle
+	- palaa takaisin lähtöpisteeseensä saavuttaessaan velhon
+- siirretty velho peliin
+
+
