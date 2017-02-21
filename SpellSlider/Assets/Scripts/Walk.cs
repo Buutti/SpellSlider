@@ -20,7 +20,7 @@ public class Walk : MonoBehaviour {
         transform.position -= new Vector3(speed, 0, 0)*Time.deltaTime;
 
         // if monster reaches the wizard, it is transported back
-        if(transform.position.x <= wizard.transform.position.x + 15)
+        if(transform.position.x <= wizard.transform.position.x + 10)
         {
             transform.position = startingPosition;
         }
