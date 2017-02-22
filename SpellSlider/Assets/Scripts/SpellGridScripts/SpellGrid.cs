@@ -45,33 +45,40 @@ public class SpellGrid : MonoBehaviour
             if (LastActive != null)
             {
                 SpellLine newLine = new SpellLine(LastActive, sender);
-                newLine.DrawLines(lineMaterial, 0);
-                SpellLines.Add(newLine);
+				if (newLine.IsValid ()) 
+				{
+					newLine.DrawLines (lineMaterial, 0);
+					SpellLines.Add (newLine);
+				}
             }
         }
+
 
         // Button has been activated before
         else if(LastActive != null && LastActive.Position != sender.Position)
         {
             SpellLine newLine = new SpellLine(LastActive, sender);
-            // Check if SpellLines already contains created line
-            int lineCount = SpellLines.FindAll(delegate (SpellLine spellLine) { return spellLine.Equals(newLine); }).Count;
-            if (lineCount == 0)
-            {
-                // Line not found in spell lines -> deaw and add line
-                newLine.DrawLines(lineMaterial, lineCount);
-                SpellLines.Add(newLine);
-            }
-            else if(lineCount == 1){
-                // Line already found in SpellLines
-                // Get index of existing line
-                int index = SpellLines.IndexOf(newLine);
-                // Destroy existing line renderer
-                SpellLines[index].DestroyRenderedLines();
-                // Add new line to spell lines and draw double line
-                newLine.DrawLines(lineMaterial, lineCount);
-                SpellLines.Add(newLine);
-            }
+			if (newLine.IsValid ()) 
+			{
+				// Check if SpellLines already contains created line
+				int lineCount = SpellLines.FindAll (delegate (SpellLine spellLine) {
+					return spellLine.Equals (newLine);
+				}).Count;
+				if (lineCount == 0) {
+					// Line not found in spell lines -> deaw and add line
+					newLine.DrawLines (lineMaterial, lineCount);
+					SpellLines.Add (newLine);
+				} else if (lineCount == 1) {
+					// Line already found in SpellLines
+					// Get index of existing line
+					int index = SpellLines.IndexOf (newLine);
+					// Destroy existing line renderer
+					SpellLines [index].DestroyRenderedLines ();
+					// Add new line to spell lines and draw double line
+					newLine.DrawLines (lineMaterial, lineCount);
+					SpellLines.Add (newLine);
+				}
+			}
         }
         
         //

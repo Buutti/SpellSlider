@@ -9,7 +9,7 @@ public class SpellLine : IEquatable<SpellLine>
 
     public SpellButton Start;
     public SpellButton End;
-    public Vector3 LineVector { get { return End.Position - Start.Position; } }
+    public Vector2 LineVector { get { return End.Position - Start.Position; } }
     public int Count { get { return LinesRendered.Count; } }
     public List<GameObject> LinesRendered;
 
@@ -120,4 +120,17 @@ public class SpellLine : IEquatable<SpellLine>
             End.Position.y == line.Start.Position.y) { return true; } // Reversed start and end positions
         return false; // Not equal!
     }
+
+	public bool IsValid()
+	{
+		Vector2 diag1 = new Vector2 (1, 1);
+		Vector2 diag2 = new Vector2 (2, 1);
+		if (LineVector.magnitude == 1 ||
+		   LineVector.magnitude == diag1.magnitude ||
+		   LineVector.magnitude == diag2.magnitude) 
+		{
+			return true;
+		}
+		return false;
+	}
 }
