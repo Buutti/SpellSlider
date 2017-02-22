@@ -1,0 +1,19 @@
+SpellSlider: Grafiikoiden pikselit
+Essi Viippola 22.2.2017
+
+Referenssikooksi valitaan hirviön koko ("1x1")
+
+PIKSELIT
+
+Hiviöt, itemit, spell buttonit:
+	- 1 x 1: 64 x 64 px
+Menu-button, hela-palkki:
+	- 2 x 1: 128 x 64 px
+Velho:
+	- 2 x 2: 128 x 128 px
+Gridi:
+	- 7 x 7: 448 x 448 px
+Tausta:
+	- 7 x 12: 448 x 768 px
+Maa:
+	- 7 x 1/2: 448 x 32 px
