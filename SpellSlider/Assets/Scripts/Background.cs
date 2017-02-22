@@ -27,8 +27,10 @@ public class Background : MonoBehaviour {
             float worldScreenHeight = Camera.main.orthographicSize * 2;
             float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
 
-            go.transform.localScale= new Vector3(worldScreenWidth / spriteWidth,
+			go.transform.localScale= new Vector3(worldScreenWidth / spriteWidth,
             worldScreenHeight / spriteHeight, 1);
+
+			go.transform.position = Vector3.zero;
         }
     }
 }
