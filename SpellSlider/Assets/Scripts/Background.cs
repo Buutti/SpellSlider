@@ -30,7 +30,7 @@ public class Background : MonoBehaviour {
 			go.transform.localScale= new Vector3(worldScreenWidth / spriteWidth,
             worldScreenHeight / spriteHeight, 1);
 
-			go.transform.position = Vector3.zero;
+			go.transform.position = new Vector3(0, 0, go.transform.position.z);
         }
     }
 }
