@@ -1,9 +1,21 @@
 SpellSlider: Notes 22.2.2017
 
-Paikalla: Toni, Martta, Essi
+Paikalla: Toni, Martta, Essi, Tapio
 
 Agenda:
 - Essi:
 	- piirt‰‰ grafiikkaa
 - Toni ja Martta:
 	- "Lis‰t‰‰n se ett‰ tuota viivojen validointi, se ei huoli en‰‰ n‰it‰ ylihypp‰yksi‰"
+- Toni, Martta ja Tapio
+    - adventure view:in jatkaminen
+
+
+Tehty:
+- gridin viivojen validointi
+- alustavat spritet
+    - rock monster
+'   - background
+    - grid
+    - menu button
+- backgroundin sijainnin korjaus
