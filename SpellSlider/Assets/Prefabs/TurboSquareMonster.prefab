@@ -9,58 +9,55 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1009423634043902}
+  m_RootGameObject: {fileID: 1273349157746098}
   m_IsPrefabParent: 1
---- !u!1 &1009423634043902
+--- !u!1 &1273349157746098
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4236684993225226}
-  - component: {fileID: 212002604193641310}
-  - component: {fileID: 114630498596244338}
+  - component: {fileID: 4549420077647946}
+  - component: {fileID: 212966607564888690}
+  - component: {fileID: 114260902920611542}
   m_Layer: 0
-  m_Name: SquareMonster
+  m_Name: TurboSquareMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4236684993225226
+--- !u!4 &4549420077647946
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009423634043902}
+  m_GameObject: {fileID: 1273349157746098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.6, y: 1.8, z: 1}
+  m_LocalPosition: {x: 120.8645, y: 1016.67444, z: 1}
   m_LocalScale: {x: 16.52673, y: 17.218874, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114630498596244338
+--- !u!114 &114260902920611542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009423634043902}
+  m_GameObject: {fileID: 1273349157746098}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9dc139823ce666847b31dec5b353eb64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wizard: {fileID: 0}
-  speed: 3
-  startingPosition: {x: 0, y: 0, z: 0}
---- !u!212 &212002604193641310
+--- !u!212 &212966607564888690
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009423634043902}
+  m_GameObject: {fileID: 1273349157746098}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,6 +84,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9380b6c7dcf18f242bb8ee3d6d023ea5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8455882, g: 0.18652679, b: 0.18652679, a: 1}
   m_FlipX: 0
   m_FlipY: 0

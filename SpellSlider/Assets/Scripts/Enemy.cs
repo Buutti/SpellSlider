@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Walk : MonoBehaviour {
+public class Enemy : MonoBehaviour {
 
     public GameObject wizard;
     public int speed;
