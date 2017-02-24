@@ -11,11 +11,6 @@ public class Background : MonoBehaviour {
 	void Start () {
         resizeSpriteToScreen(gameObject);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public static void resizeSpriteToScreen(GameObject go)
     {
