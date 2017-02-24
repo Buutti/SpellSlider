@@ -1,0 +1,19 @@
+SpellSlider - muistiinpanot 24.2.2017
+
+Paikalla: Tapio, Toni, Essi
+
+Martta lupautui tekemään animaatiot
+
+Toteutettu:
+- alustavat layoutit adventure viewiin
+- todettu liukuvärjätty tausta hyväksi :)
+- toteutettu liikkuminen valikoiden (päävalikko, tason valinta ja taso) välillä
+- lisätty musiikkisoitin ja musiikki
+
+Mietitty:
+- pitäisikö spellbuttonien collidereiden olla ennen ensimmäistä kosketusta
+suurempia, jolloin ensimmäinen kosketus osuisi helpommin buttoniin? Tämän jälkeen
+buttoneiden colliderit voitaisiin palauttaa nykyisen kokoisiksi
+- Tausta (ainakin?) on toteutettu 3D-objekteilla, joten valojen lisääminen on helppoa.
+Voisiko tätä hyödyntää esimerkiksi tulikärpästen muodossa?
+
