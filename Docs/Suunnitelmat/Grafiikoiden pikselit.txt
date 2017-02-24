@@ -17,3 +17,5 @@ Tausta:
 	- 7 x 12: 448 x 768 px
 Maa:
 	- 7 x 1/2: 448 x 32 px
+Adventure view:
+	- 7 x 4: 448 x 256
