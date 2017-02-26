@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685611739339260}
   - component: {fileID: 212002604193641310}
-  - component: {fileID: 114194678172059520}
+  - component: {fileID: 114098359676651180}
   m_Layer: 0
   m_Name: SquareMonster
   m_TagString: Untagged
@@ -35,13 +35,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009423634043902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -12.91, y: 4.7, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114194678172059520
+--- !u!114 &114098359676651180
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,10 +49,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009423634043902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831b143c64ab7ab48bcd2140512a65e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 83b512775d9515147b17b3b1805fb05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
 --- !u!212 &212002604193641310
 SpriteRenderer:
   m_ObjectHideFlags: 1
