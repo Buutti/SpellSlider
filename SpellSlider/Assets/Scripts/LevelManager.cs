@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
         switch (levelEnum)
         {
             case Levels.LEVEL_1_1:
-                level.GetComponent<Level>().EnemyQueue = new List<EnemyManager.EnemyType>
+                level.GetComponent<Level>().EnemyTypeList = new List<EnemyManager.EnemyType>
                 {
                     EnemyManager.EnemyType.SquareMonster,
                     EnemyManager.EnemyType.SquareMonster,
@@ -54,7 +54,7 @@ public class LevelManager : MonoBehaviour
                 };
                 break;
             case Levels.LEVEL_1_2:
-                level.GetComponent<Level>().EnemyQueue = new List<EnemyManager.EnemyType>
+                level.GetComponent<Level>().EnemyTypeList = new List<EnemyManager.EnemyType>
                 {
                     EnemyManager.EnemyType.TurboSquareMonster,
                     EnemyManager.EnemyType.TurboSquareMonster,
@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour
                 break;
 
             default:
-                level.GetComponent<Level>().EnemyQueue = new List<EnemyManager.EnemyType>();
+                level.GetComponent<Level>().EnemyTypeList = new List<EnemyManager.EnemyType>();
                 break;
         }
 

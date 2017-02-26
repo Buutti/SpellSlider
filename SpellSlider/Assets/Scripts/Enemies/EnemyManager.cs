@@ -5,29 +5,29 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour {
 
     public static EnemyManager Instance;
-    public GameObject SquareMonster;
-    public GameObject TurboSquareMonster;
+    public Enemy SquareMonster;
+    public Enemy TurboSquareMonster;
 
-    private Dictionary<EnemyType, GameObject> Enemies;
+    private Dictionary<EnemyType, Enemy> Enemies;
     public enum EnemyType {
         SquareMonster,
         TurboSquareMonster
     }
 
-    private void Start()
+    private void Awake()
     {
         if(Instance != null) {
             Destroy(gameObject);
         }
         else {
             Instance = this;
-            Enemies = new Dictionary<EnemyType, GameObject>();
+            Enemies = new Dictionary<EnemyType, Enemy>();
             Enemies.Add(EnemyType.SquareMonster, SquareMonster);
             Enemies.Add(EnemyType.TurboSquareMonster, TurboSquareMonster);
         }
     }
 
-    public GameObject GetEnemy(EnemyType enemyType) {
+    public Enemy GetEnemy(EnemyType enemyType) {
         return Enemies[enemyType];
     }
 }

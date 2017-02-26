@@ -4,29 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour {
-    
-    public  void LoadLevel(string sceneName) {
+public class MenuManager : MonoBehaviour
+{
+
+    public void LoadLevel(string sceneName)
+    {
         SceneManager.LoadScene(sceneName);
     }
 
     public void ExitLevel()
     {
-        try
-        {
-            Level level = FindObjectOfType<Level>();
+        Level level = FindObjectOfType<Level>();
 
-            if (level != null)
-            {
-                Destroy(level.gameObject);
-            }
-        
-            SceneManager.LoadScene("LevelSelect");
-        }
-        catch (Exception e)
+        if (level != null)
         {
-            throw;
+            Destroy(level.gameObject);
         }
+
+        SceneManager.LoadScene("LevelSelect");
     }
-        
+
 }

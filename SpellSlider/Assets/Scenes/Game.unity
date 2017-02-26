@@ -620,12 +620,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478026005}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 807e6ca149d356047b98c0de63b0a221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PartitionSize: 3.75
+  EnemyManager: {fileID: 1168442327}
+  EnemyList: []
 --- !u!4 &481058958 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4123013040573456, guid: d483806fe93bcb540a1959d12bdc20cf,
@@ -1236,9 +1237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3699e70a6601394e9ff81872d3a8489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SquareMonster: {fileID: 1009423634043902, guid: 97fc30b5b640d8540b2626b0a650b475,
+  SquareMonster: {fileID: 114098359676651180, guid: 97fc30b5b640d8540b2626b0a650b475,
     type: 2}
-  TurboSquareMonster: {fileID: 1009423634043902, guid: 97fc30b5b640d8540b2626b0a650b475,
+  TurboSquareMonster: {fileID: 114125657947135322, guid: 4150b16c09c5b724b9e33cfdd5e2c9b8,
     type: 2}
 --- !u!4 &1168442328
 Transform:

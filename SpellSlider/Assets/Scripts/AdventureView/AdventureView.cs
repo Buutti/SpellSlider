@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class AdventureView : MonoBehaviour {
 
-    public float PartitionSize;
+    Level currentLevel;
+    public EnemyManager EnemyManager;
+    public List<Enemy> EnemyList;
 	// Use this for initialization
 	void Start () {
-        gameObject.transform.position = new Vector3
-        {
-            x = 0,
-            y = Camera.main.orthographicSize * 2,
-            z = gameObject.transform.position.z
-        };
+        EnemyList = new List<Enemy>();
+        Level level = FindObjectOfType<Level>();
+        if(level != null) {
+            currentLevel = level;
+            foreach(EnemyManager.EnemyType enemyType in currentLevel.EnemyTypeList) {
+                EnemyList.Add(EnemyManager.GetEnemy(enemyType));
+            }
+        }
+
 	}
 	
 	// Update is called once per frame
