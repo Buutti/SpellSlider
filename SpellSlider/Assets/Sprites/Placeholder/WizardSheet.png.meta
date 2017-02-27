@@ -1,19 +1,19 @@
 fileFormatVersion: 2
 guid: 5ee08a7a77dae0045bbf4a3a11fe57bf
-timeCreated: 1488043070
+timeCreated: 1488208042
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WizardSheet_0
-    21300002: WizardSheet_1
-    21300004: WizardSheet_2
-    21300006: WizardSheet_3
-    21300008: WizardSheet_4
-    21300010: WizardSheet_5
-    21300012: WizardSheet_6
-    21300014: WizardSheet_7
-    21300016: WizardSheet_8
-    21300018: WizardSheet_9
+    21300000: WizardBody
+    21300002: WizardRope
+    21300004: WizardWand
+    21300006: WizardBeard
+    21300008: WizardHat
+    21300010: WizardRightFoot
+    21300012: WizardUnderpants
+    21300014: WizardArm
+    21300016: WizardLeftFoot
+    21300018: WizardEye
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -84,11 +84,19 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WizardSheet_0
+      name: WizardBody
       rect:
         serializedVersion: 2
         x: 78
@@ -101,7 +109,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_1
+      name: WizardRope
       rect:
         serializedVersion: 2
         x: 262
@@ -114,59 +122,59 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_2
+      name: WizardWand
       rect:
         serializedVersion: 2
         x: 429
         y: 26
         width: 8
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.080841064, y: 0.020963073}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_3
+      name: WizardBeard
       rect:
         serializedVersion: 2
         x: 521
         y: 18
         width: 38
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7017003, y: 0.85927826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_4
+      name: WizardHat
       rect:
         serializedVersion: 2
         x: 577
         y: 38
         width: 52
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5829104, y: 0.26048183}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_5
+      name: WizardRightFoot
       rect:
         serializedVersion: 2
         x: 163
         y: 8
         width: 14
         height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.15783037, y: 0.5958087}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_6
+      name: WizardUnderpants
       rect:
         serializedVersion: 2
         x: 204
@@ -174,38 +182,38 @@ TextureImporter:
         width: 27
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_7
+      name: WizardArm
       rect:
         serializedVersion: 2
         x: 473
         y: 26
         width: 26
         height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.076236434, y: 0.40419388}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_8
+      name: WizardLeftFoot
       rect:
         serializedVersion: 2
         x: 141
         y: 4
         width: 11
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.8919386, y: 0.81935877}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: WizardSheet_9
+      name: WizardEye
       rect:
         serializedVersion: 2
         x: 357
