@@ -59,7 +59,7 @@ public class EnemyQueue : MonoBehaviour
     /// <summary>
     /// Destroy the first enemy on the list and removes the drawn gameobject
     /// </summary>
-    public void DestroyEnemy() {
+    public void DestroyCurrentEnemy() {
         if(!IsEmpty()) {
             Destroy(EnemiesDrawn[0].gameObject);
             enemyList.RemoveAt(0);

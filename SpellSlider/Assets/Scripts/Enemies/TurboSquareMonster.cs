@@ -5,13 +5,12 @@ using UnityEngine;
 
 public class TurboSquareMonster : Enemy
 {
-    protected override SpellPattern SpellPattern
+    private void Awake()
     {
-        get
+        enemyPatterns = new List<SpellPattern>();
+        enemyPatterns.Add(new SpellPattern()
         {
-            return new SpellPattern()
-            {
-                Lines = new List<PatternLine>()
+            Lines = new List<PatternLine>()
                     {
                         PatternLine.OneTwo,
                         PatternLine.TwoThree,
@@ -22,7 +21,6 @@ public class TurboSquareMonster : Enemy
                         PatternLine.FourSeven,
                         PatternLine.OneFour,
                     }
-            };
-        }
+        });
     }
 }
