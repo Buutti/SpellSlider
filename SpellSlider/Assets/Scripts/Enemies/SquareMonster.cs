@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class SquareMonster : Enemy
 {
-    private void Awake()
-    {
+    /// <summary>
+    /// Set spell pattern and other instance variables
+    /// </summary>
+    public override void Initialize()
+    {   
+        
         enemyPatterns = new List<SpellPattern>();
         enemyPatterns.Add(new SpellPattern
         {
@@ -19,6 +23,13 @@ public class SquareMonster : Enemy
                     }
         });
     }
+
+    private void Start()
+    {
+        Initialize();
+    }
+
+
 
 
 }

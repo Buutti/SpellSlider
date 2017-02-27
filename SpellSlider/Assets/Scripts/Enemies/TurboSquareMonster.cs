@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class TurboSquareMonster : Enemy
 {
-    private void Awake()
+    /// <summary>
+    /// Set spell pattern and other instance variables
+    /// </summary>
+    public override void Initialize()
     {
         enemyPatterns = new List<SpellPattern>();
         enemyPatterns.Add(new SpellPattern()
@@ -22,5 +25,9 @@ public class TurboSquareMonster : Enemy
                         PatternLine.OneFour,
                     }
         });
+    }
+    private void Start()
+    {
+        Initialize();
     }
 }

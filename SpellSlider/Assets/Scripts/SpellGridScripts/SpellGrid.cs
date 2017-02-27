@@ -5,25 +5,19 @@ using UnityEngine.UI;
 
 public class SpellGrid : MonoBehaviour
 {
-
-    bool IsActive;
     List<SpellButton> ActivatedButtons;
     List<SpellLine> SpellLines;
     SpellButton LastActive = null;
-    SpellPattern LastPattern;
-    
 
-
+    public AdventureView adventureView;
     public Material lineMaterial;
     public Text SpellText;
 
 
     private void Start()
     {
-        IsActive = false;
         ActivatedButtons = new List<SpellButton>();
         SpellLines = new List<SpellLine>();
-        LastPattern = new SpellPattern();
     }
 
 
@@ -94,27 +88,18 @@ public class SpellGrid : MonoBehaviour
 
     public void TouchActivate()
     {
-        Debug.Log("Grid active!");
-        IsActive = true;
     }
 
     public SpellPattern TouchEnd()
     {
-        IsActive = false;
         LastActive = null;
         SpellPattern spellPattern = new SpellPattern(SpellLines);
-        if(spellPattern.Equals(LastPattern)){
-            SpellText.text = "\n MATCH!";
-        }
-        else {
-            SpellText.text = "NO MATCH";
-        }
+        adventureView.PatternDrawn(spellPattern);
         ResetButtons();
         DestroyLines();
         ActivatedButtons = new List<SpellButton>();
         SpellLines = new List<SpellLine>();
         
-        LastPattern = spellPattern;
         return spellPattern;
 
     }
