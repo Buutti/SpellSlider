@@ -31,11 +31,9 @@ public class AdventureView : MonoBehaviour {
             SpellText.text = "Queue empty";
             return;
         }
-        SpellText.text = "";
-        SpellText.text += "Spell pattern:" + spellPattern.ToString();
-        SpellText.text += "\nEnemy pattern:" + EnemyQueue.CurrentEnemy.CurrentPattern.ToString();
         if(EnemyQueue.CurrentEnemy.MatchPattern(spellPattern)) {
             // Matching pattern -> remove pattern from enemy
+            SpellText.text = "Matching pattern!";
             EnemyQueue.CurrentEnemy.RemovePattern();
             if(EnemyQueue.CurrentEnemy.PatternsRemaining == 0) {
                 // No patterns remaining on the enemy -> Destroy enemy

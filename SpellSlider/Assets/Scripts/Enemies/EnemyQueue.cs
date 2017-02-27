@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class EnemyQueue : MonoBehaviour
 {
+    private Vector3 StartingPosition;    
 
     public List<Enemy> EnemiesDrawn;
     public float Offset;
 
     public void Awake()
     {
+        StartingPosition = gameObject.transform.position;
         EnemiesDrawn = new List<Enemy>();
     }
 
@@ -64,14 +66,19 @@ public class EnemyQueue : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Instantiate and initialize new enemy and add to EnemiesDrawn
+    /// </summary>
+    /// <param name="enemy">Enemy to be added</param>
     public void DrawEnemy(Enemy enemy) {
+        // Get horizontal offset
         Vector3 offsetVector = new Vector3()
         {
             x = (EnemiesDrawn.Count * Offset),
             y = 0,
             z = 0
         };
-        Vector3 startPosition = gameObject.transform.position + offsetVector;
+        Vector3 startPosition = gameObject.transform.position + offsetVector; 
         Enemy drawnEnemy = Instantiate(enemy, startPosition, Quaternion.identity, gameObject.transform);
         drawnEnemy.Initialize();
         EnemiesDrawn.Add(drawnEnemy);
