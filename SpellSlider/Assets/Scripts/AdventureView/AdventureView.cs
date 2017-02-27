@@ -6,16 +6,17 @@ public class AdventureView : MonoBehaviour {
 
     Level currentLevel;
     public EnemyManager EnemyManager;
-    public List<Enemy> EnemyList;
+    public EnemyQueue EnemyQueue;
+    Enemy CurrentEnemy;
 	// Use this for initialization
 	void Start () {
-        EnemyList = new List<Enemy>();
         Level level = FindObjectOfType<Level>();
         if(level != null) {
             currentLevel = level;
             foreach(EnemyManager.EnemyType enemyType in currentLevel.EnemyTypeList) {
-                EnemyList.Add(EnemyManager.GetEnemy(enemyType));
+                EnemyQueue.AddEnemy(EnemyManager.GetEnemy(enemyType));
             }
+            EnemyQueue.DrawEnemies();
         }
 
 	}
