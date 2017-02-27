@@ -13,6 +13,7 @@ Velho:
 	- 2 x 2: 128 x 128 px
 Gridi:
 	- 7 x 7: 448 x 448 px
+	- "yksi" tiili: 4x32 = 128 x 128 px
 Tausta:
 	- 7 x 12: 448 x 768 px
 Maa:
