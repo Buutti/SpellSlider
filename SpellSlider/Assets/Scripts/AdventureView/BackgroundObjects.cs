@@ -6,7 +6,7 @@ public class BackgroundObjects : MonoBehaviour {
 
     public float HeightRatio;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         Transform adventureBackgroundTransform = gameObject.transform.Find("AdventureBackground");
         if(adventureBackgroundTransform != null) {
             ResizeMeshAdventureView(gameObject, adventureBackgroundTransform.gameObject.GetComponent<MeshRenderer>(), HeightRatio);

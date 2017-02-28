@@ -6,7 +6,7 @@ public class AdventureViewBackground : MonoBehaviour
 {
 
     public int speed;
-    Vector3 startingPosition = new Vector3();
+    Vector3 startingPosition;
 
     // Use this for initialization
     // Initializing monster's starting position
