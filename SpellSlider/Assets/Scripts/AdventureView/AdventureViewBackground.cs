@@ -5,27 +5,30 @@ using UnityEngine;
 public class AdventureViewBackground : MonoBehaviour
 {
 
-    public int speed;
-    Vector3 startingPosition;
+    Vector3 StartingPosition;
+    AdventureView adventureView;
+
+    public int Speed;
 
     // Use this for initialization
     // Initializing monster's starting position
     void Start()
     {
-        startingPosition = transform.position;
-
+        StartingPosition = transform.position;
+        adventureView = gameObject.transform.parent.GetComponentInParent<AdventureView>();
     }
 
     // Update is called once per frame
     // Moving the monster
     void Update()
     {
-        transform.position -= new Vector3(speed, 0, 0) * Time.deltaTime;
-
-        // if monster reaches the wizard, it is transported back
-        if (transform.position.x <= 0)
-        {
-            transform.position = startingPosition;
+        if(adventureView.IsMoving) {
+            transform.position -= new Vector3(Speed, 0, 0) * Time.deltaTime;
+            // if monster reaches the wizard, it is transported back
+            if (transform.position.x <= 0)
+            {
+                transform.position = StartingPosition;
+            }
         }
     }
 }

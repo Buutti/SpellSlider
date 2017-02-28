@@ -5,16 +5,34 @@ using UnityEngine;
 
 public class EnemyQueue : MonoBehaviour
 {
-    private Vector3 StartingPosition;    
+    private Vector3 QueueStartingPosition;    
 
     public List<Enemy> EnemiesDrawn;
-    public float Offset;
+    public float StartingOffset;
+    public float EnemyOffset;
+    public float Speed;
+
+    AdventureView adventureView;
 
     public void Awake()
     {
-        StartingPosition = gameObject.transform.position;
+        QueueStartingPosition = gameObject.transform.position;
         EnemiesDrawn = new List<Enemy>();
+        adventureView = gameObject.GetComponentInParent<AdventureView>();
     }
+
+    public void Update()
+    {
+        if(adventureView.IsMoving) {
+            // Move background until current enemy is at first queue position
+            transform.position -= new Vector3(Speed, 0, 0) * Time.deltaTime;
+            if(!IsEmpty() && CurrentEnemy.transform.position.x <= QueueStartingPosition.x) {
+                adventureView.StopMoving();
+            }
+        }
+    }
+
+
 
     /// <summary>
     /// Return the first enemy on list or null if list empty
@@ -74,7 +92,7 @@ public class EnemyQueue : MonoBehaviour
         // Get horizontal offset
         Vector3 offsetVector = new Vector3()
         {
-            x = (EnemiesDrawn.Count * Offset),
+            x = (EnemiesDrawn.Count * EnemyOffset) + StartingOffset,
             y = 0,
             z = 0
         };

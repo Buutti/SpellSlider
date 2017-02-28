@@ -3,49 +3,92 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AdventureView : MonoBehaviour {
+public class AdventureView : MonoBehaviour
+{
 
     Level currentLevel;
+    private bool isMoving;
+
     public EnemyManager EnemyManager;
     public EnemyQueue EnemyQueue;
     public Text SpellText;
-	// Use this for initialization
-	void Start () {
+    public Wizard wizard;
+
+    // Use this for initialization
+    void Start()
+    {
+        // Load level
         Level level = FindObjectOfType<Level>();
-        if(level != null) {
+        if (level != null)
+        {
             currentLevel = level;
-            foreach(EnemyManager.EnemyType enemyType in currentLevel.EnemyTypeList) {
+            // Populate enemy queue
+            foreach (EnemyManager.EnemyType enemyType in currentLevel.EnemyTypeList)
+            {
                 EnemyQueue.AddEnemy(EnemyManager.GetEnemy(enemyType));
             }
         }
+        StartMoving();
+    }
 
-	}
-	
+    /// <summary>
+    /// Returns true if adventure view is moving
+    /// </summary>
+    public bool IsMoving
+    {
+        get { return isMoving; }
+    }
+
+    /// <summary>
+    /// Start moving adventure view
+    /// </summary>
+    public void StartMoving() {
+        isMoving = true;
+        //Move, damn it!
+        wizard.GetComponent<Animator>().Play("Entry");
+    }
+
+    /// <summary>
+    /// Stop moving adventure view
+    /// </summary>
+    public void StopMoving() {
+        isMoving = false;
+        wizard.GetComponent<Animator>().Stop();
+    }
+
+
+
     /// <summary>
     /// Run when pattern is finished in the SpellGrid. 
     /// </summary>
     /// <param name="spellPattern">Pattern received from the spell grid</param>
-    public void PatternDrawn(SpellPattern spellPattern) {
-        if(EnemyQueue.IsEmpty()) {
+    public void PatternDrawn(SpellPattern spellPattern)
+    {
+        if (EnemyQueue.IsEmpty())
+        {
             // Queue is empty, do nothing
             SpellText.text = "Queue empty";
             return;
         }
-        if(EnemyQueue.CurrentEnemy.MatchPattern(spellPattern)) {
+        if (EnemyQueue.CurrentEnemy.MatchPattern(spellPattern))
+        {
             // Matching pattern -> remove pattern from enemy
             SpellText.text = "Matching pattern!";
             EnemyQueue.CurrentEnemy.RemovePattern();
-            if(EnemyQueue.CurrentEnemy.PatternsRemaining == 0) {
+            if (EnemyQueue.CurrentEnemy.PatternsRemaining == 0)
+            {
                 // No patterns remaining on the enemy -> Destroy enemy
                 EnemyQueue.DestroyCurrentEnemy();
+                StartMoving();
             }
         }
-        else {
+        else
+        {
             // Wrong pattern received from SpellGrid -> Hurt wizard!
             SpellText.text = "Wrong pattern";
             // PUNISH WIZARD HERE
             return;
         }
     }
-    
+
 }

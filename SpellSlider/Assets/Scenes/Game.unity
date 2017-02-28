@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136076580edd6cc4081d7cf2bcbe6226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  Speed: 3
 --- !u!23 &207099440
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -688,6 +688,7 @@ MonoBehaviour:
   EnemyManager: {fileID: 1168442327}
   EnemyQueue: {fileID: 1542596769}
   SpellText: {fileID: 457667316}
+  wizard: {fileID: 1371438672}
 --- !u!4 &481058958 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4123013040573456, guid: d483806fe93bcb540a1959d12bdc20cf,
@@ -1710,6 +1711,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1371438672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371438670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c5b83d62adcfa4485c04622fa476c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375808968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,7 +1945,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemiesDrawn: []
-  Offset: 6
+  StartingOffset: 15
+  EnemyOffset: 10
+  Speed: 5
 --- !u!1 &1663856526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136076580edd6cc4081d7cf2bcbe6226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  Speed: 5
 --- !u!23 &1708980932
 MeshRenderer:
   m_ObjectHideFlags: 0

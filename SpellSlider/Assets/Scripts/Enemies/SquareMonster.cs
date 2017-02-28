@@ -10,7 +10,6 @@ public class SquareMonster : Enemy
     /// </summary>
     public override void Initialize()
     {   
-        
         enemyPatterns = new List<SpellPattern>();
         enemyPatterns.Add(new SpellPattern
         {
@@ -28,8 +27,5 @@ public class SquareMonster : Enemy
     {
         Initialize();
     }
-
-
-
 
 }

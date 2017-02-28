@@ -4,8 +4,6 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    protected static EnemyManager.EnemyType type;
-    protected static int speed;
     public List<SpellPattern> enemyPatterns { get; set; }
 
     /// <summary>
