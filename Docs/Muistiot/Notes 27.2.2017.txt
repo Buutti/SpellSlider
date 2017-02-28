@@ -1,0 +1,15 @@
+SpellSlider: Muistiinpanot 27.2.2017
+
+Paikalla: Martta, Antti, Tapio, Essi
+
+Toteutettu:
+- Martta animoi velhon k‰velyn
+	- sprite tulee muuttumaan
+- Essi piirsi:
+	- gridin tiilet uusiksi (oikea m‰‰r‰ pikseleit‰)
+	- velhon aloittaminen
+- Antti ja Tapio suunnittelivat leveleit‰
+	- kts. tasot.docx
+
+Sovittu:
+- spritet piirret‰‰n mustavalkoisina, jolloin niiden v‰rien muuttaminen on helpompaa
