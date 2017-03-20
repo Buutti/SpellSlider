@@ -45,23 +45,21 @@ public class LevelManager : MonoBehaviour
             case Levels.LEVEL_1_1:
                 level.GetComponent<Level>().EnemyTypeList = new List<EnemyManager.EnemyType>
                 {
-                    EnemyManager.EnemyType.SquareMonster,
-                    EnemyManager.EnemyType.SquareMonster,
-                    EnemyManager.EnemyType.SquareMonster,
-                    EnemyManager.EnemyType.SquareMonster,
-                    EnemyManager.EnemyType.SquareMonster,
-                    EnemyManager.EnemyType.SquareMonster
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.RockMonster
                 };
                 break;
             case Levels.LEVEL_1_2:
                 level.GetComponent<Level>().EnemyTypeList = new List<EnemyManager.EnemyType>
                 {
-                    EnemyManager.EnemyType.TurboSquareMonster,
-                    EnemyManager.EnemyType.TurboSquareMonster,
-                    EnemyManager.EnemyType.TurboSquareMonster,
-                    EnemyManager.EnemyType.TurboSquareMonster,
-                    EnemyManager.EnemyType.TurboSquareMonster,
-                    EnemyManager.EnemyType.TurboSquareMonster
+                    EnemyManager.EnemyType.RockMonster,
+                    EnemyManager.EnemyType.IceMonster,
+                    EnemyManager.EnemyType.FireMonster,
+                    EnemyManager.EnemyType.SandMonster,
                 };
                 break;
 

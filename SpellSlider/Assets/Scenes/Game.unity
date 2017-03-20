@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6fb2d3222758b4fb9c8cfd19269eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeightRatio: 0.27
+  HeightRatio: 0.33
 --- !u!1 &737367557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1790,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SquareMonster: {fileID: 114098359676651180, guid: 97fc30b5b640d8540b2626b0a650b475,
     type: 2}
-  TurboSquareMonster: {fileID: 114125657947135322, guid: 4150b16c09c5b724b9e33cfdd5e2c9b8,
+  FireMonster: {fileID: 114734503695687716, guid: 9230da7e79a6b8c469df0f9122fd02e4,
+    type: 2}
+  IceMonster: {fileID: 114065011554486066, guid: 099bfd116a02e7e449dc4c2ef6a9da96,
+    type: 2}
+  SandMonster: {fileID: 114032748339482912, guid: 505155e67d9436542946291a2888e63e,
     type: 2}
 --- !u!4 &1168442328
 Transform:
@@ -2125,7 +2129,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1375808968}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 18.64, y: -9.79, z: 29.199997}
+  m_LocalPosition: {x: 19.91, y: -9.79, z: 29.199997}
   m_LocalScale: {x: 3.9887724, y: 0.9999999, z: 2.3232572}
   m_Children: []
   m_Father: {fileID: 717036760}
