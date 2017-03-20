@@ -1,9 +1,32 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e6ed945914ca31144ab91de54c1691c4
 timeCreated: 1488385648
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 785ce2356f196ba4e9839a77553eb44d
+timeCreated: 1490025175
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wizard_hair
+    21300002: wizard_body
+    21300004: wizard_head
+    21300006: wizard_wand
+    21300008: wizard_hair
+    21300010: wizard_beard
+    21300012: wizard_hat
+    21300014: wizard_eye
+    21300016: wizard_dress
+    21300018: wizard_dresspart
+    21300020: wizard_hand
+    21300022: wizard_leftfoot
+    21300024: wizard_rightfoot
+    21300026: wizard_layers_13
+    21300028: wizard_layers_14
+>>>>>>> Fail walking animation (and animator hierarchy attachment code)
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +57,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> Fail walking animation (and animator hierarchy attachment code)
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,9 +85,234 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
   spriteSheet:
     serializedVersion: 2
     sprites: []
+=======
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wizard_hair
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 83
+        width: 16
+        height: 9
+      alignment: 9
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_body
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 9
+        width: 67
+        height: 109
+      alignment: 9
+      pivot: {x: 0.58650506, y: 0.3404814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_head
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 68
+        width: 41
+        height: 40
+      alignment: 9
+      pivot: {x: 0.47298077, y: 0.04990921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_wand
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 50
+        width: 14
+        height: 36
+      alignment: 9
+      pivot: {x: 0.24280657, y: 0.08453136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_hair
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 60
+        width: 53
+        height: 39
+      alignment: 9
+      pivot: {x: 0.7351719, y: 0.6704489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_beard
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 27
+        width: 95
+        height: 60
+      alignment: 9
+      pivot: {x: 0.7498599, y: 0.89791477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_hat
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 77
+        width: 96
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5807864, y: 0.26341376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_eye
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 80
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_dress
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 15
+        width: 90
+        height: 63
+      alignment: 9
+      pivot: {x: 0.67542046, y: 0.6978425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_dresspart
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 26
+        width: 29
+        height: 25
+      alignment: 9
+      pivot: {x: 0.15616581, y: 0.21194191}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_hand
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 48
+        width: 39
+        height: 25
+      alignment: 9
+      pivot: {x: 0.11432041, y: 0.35816178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_leftfoot
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 5
+        width: 33
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69313556, y: 0.7257087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_rightfoot
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 13
+        width: 32
+        height: 22
+      alignment: 9
+      pivot: {x: 0.13283157, y: 0.7513609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_layers_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 7
+        width: 23
+        height: 19
+      alignment: 9
+      pivot: {x: 0.17914614, y: 0.82366866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wizard_layers_14
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 17
+        width: 4
+        height: 5
+      alignment: 9
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+>>>>>>> Fail walking animation (and animator hierarchy attachment code)
     outline: []
   spritePackingTag: 
   userData: 
