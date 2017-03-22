@@ -17,3 +17,18 @@ Toteutettu:
 	- WaterMonster
 	- WindMonster
 	- HealthBar
+	- MenuButton (new)
+
+Seuraavalla kerralla:
+- Spritejen sijoittaminen peliin
+	- monsut
+	- HealthBar
+	- uusi AdventureView (liukuväritausta)
+- Health-ominaisuuden viimeistely (Antti, Tapio)
+- AdventureViewObjects
+	- muodostetaan kansiot:
+		- Ground Objects: maa, ruoho, ...
+		- Background Objects: puut, vuoret, ...
+		- Sky Objects: tippukivet, ...
+
+ 
