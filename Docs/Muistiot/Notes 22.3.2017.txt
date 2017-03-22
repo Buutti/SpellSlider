@@ -1,0 +1,14 @@
+SpellSlider: Muistiinpanot 22.3.2017
+
+TODO:
+- Essi piirt‰‰ spritej‰
+	- prioriteetteina vesi ja puu
+	- helapalkki
+- Tapio toteuttaa velhon helan
+	- ominaisuus: terveys
+	- vihollisen tekem‰ damage
+	- kuolema
+	- visuaalinen toteutus helapalkista
+
+Toteutettu: 
+- Suunnitelma priorisoitavista asioista

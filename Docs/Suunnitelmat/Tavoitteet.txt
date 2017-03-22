@@ -1,0 +1,24 @@
+SpellSlider: Tavoitteet
+
+Antti, Tapio, Essi
+
+Ensisijaiset tavoitteet
+- Vahinko
+	- Velhon kuntopalkki
+	- Vihollisten "kunto"
+- Tasot
+	- spritejen kierrättäminen, värit, adventureViewObjects (puut)
+- Musiikki (uusi versio)
+- WorldMap
+- Animaatiot
+	- Velhon animaatio
+	- Simppelit animaatiot vihollisille (ylös-alas)
+- Spritet mahdollisimman monelle vihollisille
+
+Toissijaiset tavoitteet
+- bossit
+- itemit, raha
+- salaisuudet, esteet
+- animaatiot (paitsi velho)
+- pelimekanismin vaihtelu kentittäin
+	- esim. hautausmaalla kuu kääntää gridin toisinpäin
