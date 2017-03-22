@@ -17,3 +17,23 @@ Toteutettu:
 	- WaterMonster
 	- WindMonster
 	- HealthBar
+	- MenuButton (new)
+- Kunto-ominaisuuden toteuttamisen suunnitelma
+	- attackDamage, attackDelay
+
+Seuraavalla kerralla:
+- Spritejen sijoittaminen peliin
+	- monsut
+	- HealthBar
+	- uusi AdventureView (liukuv‰ritausta)
+- Health-ominaisuuden viimeistely (Antti, Tapio)
+- AdventureViewObjects
+	- muodostetaan kansiot:
+		- Ground Objects: maa, ruoho, ...
+		- Background Objects: puut, vuoret, ...
+		- Sky Objects: tippukivet, ...
+- SpellGridFrame
+	- siirret‰‰n oikealle paikalle SpellGridin eteen
+- Velhon palauttaminen peliin
+
+ 

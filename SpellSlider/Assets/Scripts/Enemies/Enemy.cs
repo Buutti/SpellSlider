@@ -67,7 +67,14 @@ public abstract class Enemy : MonoBehaviour
     /// </summary>
     public abstract void Initialize();
 
+	public void attackFunction()
+	{
+		if transform.position.ẍ <= 0
+		{
 
+		}
+
+	}
 
 
 }
