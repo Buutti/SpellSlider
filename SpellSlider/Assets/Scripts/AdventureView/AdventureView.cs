@@ -8,6 +8,7 @@ public class AdventureView : MonoBehaviour
 
     Level currentLevel;
     private bool isMoving;
+    private System.Random rng;
 
     public EnemyManager EnemyManager;
     public EnemyQueue EnemyQueue;
@@ -17,15 +18,28 @@ public class AdventureView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        ///<summary>For randomizing enemy queue</summary>
+        rng = new System.Random();
         // Load level
         Level level = FindObjectOfType<Level>();
         if (level != null)
         {
             currentLevel = level;
-            // Populate enemy queue
-            foreach (EnemyManager.EnemyType enemyType in currentLevel.EnemyTypeList)
+
+            List<Enemy> enemyList = new List<Enemy>();
+            // Read enemies from level
+            foreach (EnemyCount enemyCount in currentLevel.EnemyCountList)
             {
-                EnemyQueue.AddEnemy(EnemyManager.GetEnemy(enemyType));
+                for(int i = 0; i < enemyCount.Count; i++) {
+                    enemyList.Add(EnemyManager.GetEnemy(enemyCount.EnemyType));
+                }
+            }
+            if(currentLevel.Randomized) {
+                enemyList.Shuffle(rng);
+            }
+            // Populate enemy queue
+            foreach (Enemy enemy in enemyList) {
+                EnemyQueue.AddEnemy(enemy); 
             }
         }
         StartMoving();
