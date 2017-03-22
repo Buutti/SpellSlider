@@ -4,7 +4,12 @@ using UnityEngine;
 
 [System.Serializable]
 public class Level : MonoBehaviour {
+
     
+    public Material BackgroundMaterial;
+    public Material CeilingMaterial;
+    public Material WallMaterial;
+    public Material GroundMaterial;
     /// <summary>
     /// Queue containing all the enemies in the level
     /// </summary>

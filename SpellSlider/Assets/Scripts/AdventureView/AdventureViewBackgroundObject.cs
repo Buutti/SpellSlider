@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdventureViewBackground : MonoBehaviour
+public class AdventureViewBackgroundObject : MonoBehaviour
 {
 
     Vector3 StartingPosition;

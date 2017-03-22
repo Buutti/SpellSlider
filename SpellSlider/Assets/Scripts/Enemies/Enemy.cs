@@ -69,10 +69,10 @@ public abstract class Enemy : MonoBehaviour
 
 	public void attackFunction()
 	{
-		if transform.position.ẍ <= 0
-		{
+		//if transform.position.ẍ <= 0
+		//{
 
-		}
+		//}
 
 	}
 
