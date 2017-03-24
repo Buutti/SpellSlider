@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
 {
     public List<SpellPattern> enemyPatterns { get; set; }
+	//Time that the enemy waits before attacking in seconds
+	//Used by basicAttackFunction
+	float attackTimer = 0.5f;
+	public Text SpellText;
 
     /// <summary>
     /// Return the number of patterns remaining
@@ -67,14 +72,24 @@ public abstract class Enemy : MonoBehaviour
     /// </summary>
     public abstract void Initialize();
 
-	public void attackFunction()
+	void Update(){
+		//basicAttackFunction();
+	}
+	//Basic attack for enemys
+	public void basicAttackFunction()
 	{
-		//if transform.position.ẍ <= 0
-		//{
-
-		//}
+		if (gameObject.transform.position.x<= 0)
+		{
+			
+			attackTimer -= Time.deltaTime;
+			if (attackTimer <= 0) {
+				SpellText.text = "The enemy hit you!";
+				Wizard wizard = GameObject.Find ("wizard").GetComponent<Wizard> ();
+				wizard.wizardHealth = wizard.wizardHealth - 10;
+			}
+		}
 
 	}
 
-
+	
 }
