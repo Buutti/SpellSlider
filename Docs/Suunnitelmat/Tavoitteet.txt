@@ -6,12 +6,14 @@ Ensisijaiset tavoitteet
 - Vahinko
 	- Velhon kuntopalkki
 	- Vihollisten "kunto"
+	- kuolema
 - Tasot
 	- spritejen kierrättäminen, värit, adventureViewObjects (puut)
 - Musiikki (uusi versio)
 - WorldMap
+	- Velhon liikkuminen/idlaus mapissa?
 - Animaatiot
-	- Velhon animaatio
+	- Velhon animaatiot (idle (mikä on idle-tila?), walk, damage, spell)
 	- Simppelit animaatiot vihollisille (ylös-alas)
 - Spritet mahdollisimman monelle vihollisille
 
