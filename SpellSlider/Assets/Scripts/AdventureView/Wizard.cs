@@ -18,4 +18,13 @@ public class Wizard : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void wizardAliveChecker()
+	{
+		if (wizardHealth <= 0) 
+		{
+			alive = false;
+		}
+	}
+
 }

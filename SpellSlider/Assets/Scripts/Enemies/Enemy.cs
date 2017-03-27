@@ -8,7 +8,7 @@ public abstract class Enemy : MonoBehaviour
     public List<SpellPattern> enemyPatterns { get; set; }
 	//Time that the enemy waits before attacking in seconds
 	//Used by basicAttackFunction
-	float attackTimer = 0.5f;
+	float attackTimer = 1.0f;
 	public Text SpellText;
 
     /// <summary>
@@ -73,19 +73,25 @@ public abstract class Enemy : MonoBehaviour
     public abstract void Initialize();
 
 	void Update(){
-		//basicAttackFunction();
+		basicAttackFunction();
 	}
 	//Basic attack for enemys
 	public void basicAttackFunction()
 	{
-		if (gameObject.transform.position.x<= 0)
+		
+		//Debug.Log(transform.position.x);
+		if (transform.position.x<= 20.5)
+
 		{
+			//Debug.Log ("The jjjj");
 			
 			attackTimer -= Time.deltaTime;
 			if (attackTimer <= 0) {
-				SpellText.text = "The enemy hit you!";
-				Wizard wizard = GameObject.Find ("wizard").GetComponent<Wizard> ();
+				//
+				Debug.Log("The enemy hit you!");
+				Wizard wizard = GameObject.Find ("Wizard").GetComponent<Wizard> ();
 				wizard.wizardHealth = wizard.wizardHealth - 10;
+				attackTimer = 2.0f;
 			}
 		}
 
