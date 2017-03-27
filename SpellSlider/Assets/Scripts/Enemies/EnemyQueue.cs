@@ -23,16 +23,24 @@ public class EnemyQueue : MonoBehaviour
 
     public void Update()
     {
-        if(adventureView.IsMoving) {
-            // Move background until current enemy is at first queue position
-            transform.position -= new Vector3(Speed, 0, 0) * Time.deltaTime;
-            if(!IsEmpty() && CurrentEnemy.transform.position.x <= QueueStartingPosition.x) {
-                adventureView.StopMoving();
-            }
+        if(adventureView.IsMoving)
+        {
+            MoveEnemyQueue();
         }
     }
 
-
+    /// <summary>
+    /// Moves EnemyQueue until Current enemy is at the starting position of the queue
+    /// </summary>
+    private void MoveEnemyQueue()
+    {
+        // Move background until current enemy is at first queue position
+        transform.position -= new Vector3(Speed, 0, 0) * Time.deltaTime;
+        if (!IsEmpty() && CurrentEnemy.transform.position.x <= QueueStartingPosition.x)
+        {
+            adventureView.StopMoving();
+        }
+    }
 
     /// <summary>
     /// Return the first enemy on list or null if list empty

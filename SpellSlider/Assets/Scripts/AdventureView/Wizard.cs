@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Wizard : MonoBehaviour {
 	
-	public int wizardHealth = 100;
+	public float wizardHealth = 100;
 	public bool alive = true;
 
 	// Use this for initialization

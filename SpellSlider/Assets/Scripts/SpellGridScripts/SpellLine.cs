@@ -13,6 +13,8 @@ public class SpellLine : IEquatable<SpellLine>
     public int Count { get { return LinesRendered.Count; } }
     public List<GameObject> LinesRendered;
 
+    private static Vector3 zOffset = new Vector3(0, 0, -10);
+
     public SpellLine()
     {
         LinesRendered = new List<GameObject>();
@@ -72,8 +74,8 @@ public class SpellLine : IEquatable<SpellLine>
         lr.endColor = Color.red;
         lr.startWidth = 1.2f;
         lr.endWidth = 1.2f;
-        lr.SetPosition(0, (Vector2)Start.transform.position + (Vector2)offset);
-        lr.SetPosition(1, (Vector2)End.transform.position + (Vector2)offset);
+        lr.SetPosition(0, Start.transform.position + offset + zOffset);
+        lr.SetPosition(1, End.transform.position + offset + zOffset);
         //lr.useWorldSpace = false;
         return line;
     }
