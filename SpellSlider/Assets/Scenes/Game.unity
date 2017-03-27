@@ -1045,7 +1045,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!224 &706845841
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1547,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &943415150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,7 +1908,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &1294990013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +2007,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &1299168236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c5b83d62adcfa4485c04622fa476c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wizardHealth: 100
+  alive: 1
 --- !u!1 &1375808968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2365,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &1487487517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,7 +2732,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &1790047136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,7 +3210,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &2006013781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,7 +3514,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &2077850213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,7 +3709,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 65
 --- !u!1 &2134943032
 GameObject:
   m_ObjectHideFlags: 0
