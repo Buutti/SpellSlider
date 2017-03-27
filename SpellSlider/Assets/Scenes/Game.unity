@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 453853448}
   - component: {fileID: 453853447}
   - component: {fileID: 453853449}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 453853445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2348.0012}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2006013785}
@@ -480,8 +480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -591.50024, y: 1205.5}
-  m_SizeDelta: {x: 257, y: 149}
+  m_AnchoredPosition: {x: -598, y: 1170}
+  m_SizeDelta: {x: 199, y: 139}
   m_Pivot: {x: 0.50000006, y: 0.49999994}
 --- !u!114 &453853447
 MonoBehaviour:
@@ -3276,7 +3276,7 @@ Canvas:
   serializedVersion: 2
   m_RenderMode: 1
   m_Camera: {fileID: 390669065}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
