@@ -1,0 +1,63 @@
+SpellSlider: Muistiinpanot 27.3.2017
+
+Antti, Tapio, Martta, Essi
+
+- Korjattu buildaus-ongelmia
+	- SDK:ssa ongelmia: ladattava vanha versio
+	- Ohje: http://answers.unity3d.com/questions/1323731/unable-to-list-target-platforms-please-make-sure-t.html
+
+- Tapio jatkaa velhon hela-ominaisuuden koodaamista
+- Martta korjasi velhon animaation ja splittasi monsujen spriteja animaatioita varten
+
+
+Seuraavien viikkojen suunnitelma:
+- Tasojen muodostaminen
+	- Spritejen kierr‰tt‰minen
+		- Spritejen valinta (BackgroundObjects)
+		- Spritejen v‰ritt‰minen koodissa
+	- Valitaan monsut (kts. Tasot.docx)
+- Maailmankartta
+	- Sprite
+		- Idea: Kokonainen alue voisi olla "kentt‰"
+			Valitaan kentt‰ -> koko alue valaistuu
+			-> N‰ytˆlle ilmestyy kolme valittavaa tasoa
+			(suoritettava yksi kerrallaan)
+			Alueet, joilla ei ole viel‰ vierailtu, voisivat olla pimeit‰
+			(as in mustan magian alla)
+	- Funktionaalisuus
+		- Prompti, jossa tasojen valinta
+		- Tason kuva muuttaa v‰ri‰
+- Velhon kuolema (Tapio)
+- Title Screen
+	- "Slide to unlock the mysteries of magic"
+- Kansioiden siivoaminen (erityisesti spritet)
+- Musiikin viimeistely
+- Pelaajan etenemisen tallentaminen
+	- Esim. alkutarinaa ei tule kuin kerran
+- Tutoriaali
+	- Huom: Kivihirviˆ ei ole yksik‰sitteinen -> eka monsu voisi olla joku muu
+- Tappamisanimaatiot
+	- Aluksi esimerkiksi monsun v‰rinen pilvi
+	- Lopulliseen peliin voisi harkita erilaisia animaatioita eri monsuille
+		- Esim. kivi sirpaleiksi hakulla, j‰‰ fˆˆnill‰
+	- Particle Emitter tee Peetu
+	- Vihu voi j‰‰d‰ kuolemaan velhon taakse ja velho jatkaa matkaa
+- Alkutarinan kuvat
+	- Alussa hyv‰ linna -> taian ep‰onnistuttua linna muuttuu "pahaksi"
+	- Viimeinen bossi: evil twin (pit‰‰ n‰ky‰ tarinassa)
+	- Tapahtumapaikka: linnan torni
+	- Pata, josta nousee evil twin
+	1. Iloinen velho tekee taikajuomaa
+		- Wizard: "It's time to do magic!"
+	2. Velho tipauttaa hyllylt‰ p‰‰kallomerkityn pullon taikajuomaan
+		- Wizard: "Uh-oh"
+	3. Taikajuoma muuttuu mustaksi ja sielt‰ nousee evil twin
+		- Taikajuomassa kuohuntaa/savua
+		- Wizard: "Uh-oh!"
+		- Evil Twin (Draziw): "I am Draziw, the evil wizard"
+	4. Pata r‰j‰ht‰‰ evil twinin ymp‰rilt‰ ja velho lent‰‰ kauas pois
+		- Wizard: "AAAAAAAAAAAAA!"
+		- Evil Twin (Draziw): "It's time to take over the world"
+	5. Velho her‰‰ aurinkoisesta mets‰st‰
+		- Wizard: "That wizard sure did not seem friendly. I must stop him"
+
