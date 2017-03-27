@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Level : MonoBehaviour {
 
-    
+    public string Name;
     public Material BackgroundMaterial;
     public Material CeilingMaterial;
     public Material WallMaterial;

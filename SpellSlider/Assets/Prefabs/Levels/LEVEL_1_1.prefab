@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef59dbe4ad04d148a171d6208e469d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: LEVEL_1_1
   BackgroundMaterial: {fileID: 2100000, guid: fe8c8d04cd1e52e478bb953bd0e1c98d, type: 2}
   CeilingMaterial: {fileID: 2100000, guid: 92e72bc37d817b4409cf067f3b0716e4, type: 2}
   WallMaterial: {fileID: 2100000, guid: 3929b72470f449e4e81d6b6fa0ddf1bd, type: 2}

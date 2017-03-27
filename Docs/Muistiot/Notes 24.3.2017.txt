@@ -1,0 +1,30 @@
+SpellSlider: Muistiinpanot 24.3.2017
+
+Tapio, Essi
+
+TODO: 
+- Menu-nappula on puiden takana
+
+ONGELMIA:
+- Velho ei näy
+	- Velhon animaatio on ilmeisesti rikki
+	- Saadaan toimimaan väliaikaisesti
+		- kommentoimalla ulos animaattoria kutsujat rivit AdventureViewBackground-skriptistä
+		- Rastimalla animaattorin pois wizardista
+
+NOTES:
+- Jos käyttää unityn "play"-testausta, täytyy aloittaa MainMenusta (LevelSelectistä?),
+jotta viholliset latautuvat
+	- voi myös painaa nuolesta ja valita taso uudestaan
+
+TEHTY:
+- Muutettu RockMonsterin kuviota pienestä neliöstä isoon neliöön
+- Terveys-ominaisuus (health) VIELÄ KESKEN
+	- lisätty velholle muuttujat
+		- terveys (int wizardHealth)
+		- elossaolon tila (bool alive)
+	- lisätty vihollisille
+		- perushyökkäys
+		- update
+
+

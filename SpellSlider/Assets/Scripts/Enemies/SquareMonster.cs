@@ -16,9 +16,20 @@ public class SquareMonster : Enemy
             Lines = new List<PatternLine>()
                     {
                         PatternLine.OneTwo,
+                        PatternLine.TwoThree,
+                        PatternLine.ThreeSix,
+                        PatternLine.SixNine,
+                        PatternLine.OneFour,
+                        PatternLine.FourSeven,
+                        PatternLine.SevenEight,
+                        PatternLine.EightNine
+                        /*
+                         * Old
+                        PatternLine.OneTwo,
                         PatternLine.TwoFive,
                         PatternLine.FourFive,
                         PatternLine.OneFour
+                        */
                     }
         });
     }
