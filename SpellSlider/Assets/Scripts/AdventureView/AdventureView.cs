@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AdventureView : MonoBehaviour
 {
-
+	public GameObject winPanel;
     Level currentLevel;
     private bool isMoving;
     private System.Random rng;
@@ -18,6 +18,7 @@ public class AdventureView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		winPanel.SetActive (false);
         ///<summary>For randomizing enemy queue</summary>
         rng = new System.Random();
         // Load level
@@ -44,6 +45,11 @@ public class AdventureView : MonoBehaviour
         }
         StartMoving();
     }
+
+	void Update(){
+		CheckAllEnemysDestroyed ();
+
+	}
 
     /// <summary>
     /// Returns true if adventure view is moving
@@ -104,5 +110,16 @@ public class AdventureView : MonoBehaviour
             return;
         }
     }
+
+	public void CheckAllEnemysDestroyed(){
+		if (EnemyQueue.IsEmpty()) {
+			//startWizardWalking (2);
+			//Wait(2 Sec)
+			winPanel.SetActive(true);
+			isMoving = false;
+
+		}
+
+	}
 
 }

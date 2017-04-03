@@ -20,6 +20,7 @@ public class SpellCursor : MonoBehaviour {
 	void Update ()
     {
         HandleTouch();
+		HandleMouse();
     }
 
     // Get touch and move spell cursor
@@ -42,7 +43,7 @@ public class SpellCursor : MonoBehaviour {
                     case TouchPhase.Moved:
                     // Finger moved -> move cursor
                         cursorImage.enabled = true;
-                        moveSpell(touch);
+						moveSpell(touch.position);
                         break;
 
                     case TouchPhase.Ended:
@@ -74,6 +75,26 @@ public class SpellCursor : MonoBehaviour {
         }
     }
 
+	private void HandleMouse()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			SendMessageUpwards("TouchActivate");
+			Debug.Log("Touch began");
+		}
+		else if(Input.GetMouseButtonUp(0)){
+			cursorImage.enabled = false ;
+			SendMessageUpwards("TouchEnd");
+		}
+		else if (Input.GetMouseButton(0)) 
+		{
+			// Finger moved -> move cursor
+			cursorImage.enabled = true;
+			moveSpell(Input.mousePosition);
+		}
+	}
+
+
     string getTouchMessage(Touch touch)
     {
         string message = "";
@@ -89,14 +110,14 @@ public class SpellCursor : MonoBehaviour {
     /// Moves the spell cursor to touch position
     /// </summary>
     /// <param name="touch">Finger touch for moving the spell</param>
-    void moveSpell(Touch touch) {
+	void moveSpell(Vector2 position) {
         
         // Calculate transform factor for screen to game world conversion
         // Note! Bottom left corner of camera must be placed at origin!
         float transformFactor = 1 / (Screen.height / (2 * Camera.main.orthographicSize));
         gameObject.transform.position = new Vector3(
-            touch.position.x * transformFactor,
-            touch.position.y * transformFactor,
+            position.x * transformFactor,
+            position.y * transformFactor,
             gameObject.transform.position.z
         );
     }
