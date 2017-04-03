@@ -65,7 +65,7 @@ public class AdventureView : MonoBehaviour
     public void StartMoving() {
         isMoving = true;
         //Move, damn it!
-        wizard.GetComponent<Animator>().Play("Entry");
+        wizard.GetComponent<Animator>().SetTrigger("StartWalking");
     }
 
     /// <summary>
@@ -73,7 +73,7 @@ public class AdventureView : MonoBehaviour
     /// </summary>
     public void StopMoving() {
         isMoving = false;
-        wizard.GetComponent<Animator>().Stop();
+        wizard.GetComponent<Animator>().SetTrigger("StopWalking");
     }
 
 
