@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class AdventureView : MonoBehaviour
 {
+    public static AdventureView Instance;
 	public GameObject winPanel;
+    public Text WinText;
     Level currentLevel;
     private bool isMoving;
     private System.Random rng;
@@ -18,6 +20,7 @@ public class AdventureView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Instance = this;
 		winPanel.SetActive (false);
         ///<summary>For randomizing enemy queue</summary>
         rng = new System.Random();
@@ -47,7 +50,7 @@ public class AdventureView : MonoBehaviour
     }
 
 	void Update(){
-		CheckAllEnemysDestroyed ();
+		//CheckAllEnemysDestroyed ();
 
 	}
 
@@ -64,7 +67,6 @@ public class AdventureView : MonoBehaviour
     /// </summary>
     public void StartMoving() {
         isMoving = true;
-        //Move, damn it!
         wizard.GetComponent<Animator>().SetTrigger("StartWalking");
     }
 
@@ -99,7 +101,12 @@ public class AdventureView : MonoBehaviour
             {
                 // No patterns remaining on the enemy -> Destroy enemy
                 EnemyQueue.DestroyCurrentEnemy();
-                StartMoving();
+                if(EnemyQueue.IsEmpty()) {
+                    WinLevel();
+                }
+                else if(!IsMoving)  {
+                    StartMoving();
+                }
             }
         }
         else
@@ -109,6 +116,10 @@ public class AdventureView : MonoBehaviour
             // PUNISH WIZARD HERE
             return;
         }
+    }
+
+    public void WinLevel() {
+        wizard.GetComponent<Animator>().SetTrigger("Win");
     }
 
 	public void CheckAllEnemysDestroyed(){
