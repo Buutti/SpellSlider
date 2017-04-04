@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AdventureView : MonoBehaviour
 {
     public static AdventureView Instance;
-	public GameObject winPanel;
+    public GameObject winPanel;
     public Text WinText;
     Level currentLevel;
     private bool isMoving;
@@ -21,7 +21,7 @@ public class AdventureView : MonoBehaviour
     void Start()
     {
         Instance = this;
-		winPanel.SetActive (false);
+        winPanel.SetActive(false);
         ///<summary>For randomizing enemy queue</summary>
         rng = new System.Random();
         // Load level
@@ -34,25 +34,29 @@ public class AdventureView : MonoBehaviour
             // Read enemies from level
             foreach (EnemyCount enemyCount in currentLevel.EnemyCountList)
             {
-                for(int i = 0; i < enemyCount.Count; i++) {
+                for (int i = 0; i < enemyCount.Count; i++)
+                {
                     enemyList.Add(EnemyManager.GetEnemy(enemyCount.EnemyType));
                 }
             }
-            if(currentLevel.Randomized) {
+            if (currentLevel.Randomized)
+            {
                 enemyList.Shuffle(rng);
             }
             // Populate enemy queue
-            foreach (Enemy enemy in enemyList) {
-                EnemyQueue.AddEnemy(enemy); 
+            foreach (Enemy enemy in enemyList)
+            {
+                EnemyQueue.AddEnemy(enemy);
             }
         }
         StartMoving();
     }
 
-	void Update(){
-		//CheckAllEnemysDestroyed ();
+    void Update()
+    {
+        //CheckAllEnemysDestroyed ();
 
-	}
+    }
 
     /// <summary>
     /// Returns true if adventure view is moving
@@ -65,7 +69,8 @@ public class AdventureView : MonoBehaviour
     /// <summary>
     /// Start moving adventure view
     /// </summary>
-    public void StartMoving() {
+    public void StartMoving()
+    {
         isMoving = true;
         wizard.GetComponent<Animator>().SetTrigger("StartWalking");
     }
@@ -73,7 +78,8 @@ public class AdventureView : MonoBehaviour
     /// <summary>
     /// Stop moving adventure view
     /// </summary>
-    public void StopMoving() {
+    public void StopMoving()
+    {
         isMoving = false;
         wizard.GetComponent<Animator>().SetTrigger("StopWalking");
     }
@@ -101,10 +107,12 @@ public class AdventureView : MonoBehaviour
             {
                 // No patterns remaining on the enemy -> Destroy enemy
                 EnemyQueue.DestroyCurrentEnemy();
-                if(EnemyQueue.IsEmpty()) {
+                if (EnemyQueue.IsEmpty())
+                {
                     WinLevel();
                 }
-                else if(!IsMoving)  {
+                else if (!IsMoving)
+                {
                     StartMoving();
                 }
             }
@@ -118,19 +126,27 @@ public class AdventureView : MonoBehaviour
         }
     }
 
-    public void WinLevel() {
+    /// <summary>
+    /// Launches the win cycle
+    /// </summary>
+    public void WinLevel()
+    {
+        if (IsMoving) { StopMoving(); }
+        // Trigger win animation for wizard
         wizard.GetComponent<Animator>().SetTrigger("Win");
     }
 
-	public void CheckAllEnemysDestroyed(){
-		if (EnemyQueue.IsEmpty()) {
-			//startWizardWalking (2);
-			//Wait(2 Sec)
-			winPanel.SetActive(true);
-			isMoving = false;
+    public void CheckAllEnemysDestroyed()
+    {
+        if (EnemyQueue.IsEmpty())
+        {
+            //startWizardWalking (2);
+            //Wait(2 Sec)
+            winPanel.SetActive(true);
+            isMoving = false;
 
-		}
+        }
 
-	}
+    }
 
 }

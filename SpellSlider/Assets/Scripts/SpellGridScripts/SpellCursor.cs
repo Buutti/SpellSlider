@@ -20,7 +20,9 @@ public class SpellCursor : MonoBehaviour {
 	void Update ()
     {
         HandleTouch();
-		HandleMouse();
+        if(Debug.isDebugBuild) {
+		    HandleMouse();
+        }
     }
 
     // Get touch and move spell cursor
