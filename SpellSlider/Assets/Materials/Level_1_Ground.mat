@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Tree_material
+  m_Name: Level_1_Ground
   m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -43,13 +43,13 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 10.26, y: 1}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: a59b33aa00319904597d7084ff326015, type: 3}
-        m_Scale: {x: 10, y: 1}
+        m_Texture: {fileID: 2800000, guid: 0f166d7a303bd6540b726bc3bafda6b2, type: 3}
+        m_Scale: {x: 2.5, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
@@ -71,9 +71,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
-        name: PixelSnap
-      second: 0
-    - first:
         name: _BumpScale
       second: 1
     - first:
@@ -84,7 +81,7 @@ Material:
       second: 1
     - first:
         name: _DstBlend
-      second: 10
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
@@ -99,7 +96,7 @@ Material:
       second: 0
     - first:
         name: _Mode
-      second: 3
+      second: 0
     - first:
         name: _OcclusionStrength
       second: 1
@@ -120,7 +117,7 @@ Material:
       second: 0
     - first:
         name: _ZWrite
-      second: 0
+      second: 1
     m_Colors:
     - first:
         name: _Color

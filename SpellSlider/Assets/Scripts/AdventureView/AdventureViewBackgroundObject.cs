@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AdventureViewBackgroundObject : MonoBehaviour
 {
-
+	public float moveAmount;
     Vector3 StartingPosition;
     AdventureView adventureView;
 
@@ -15,6 +15,7 @@ public class AdventureViewBackgroundObject : MonoBehaviour
     void Start()
     {
         StartingPosition = transform.position;
+		Debug.Log ("STARTING AT " + transform.position.x + " OR " + transform.localPosition.x);
         adventureView = gameObject.transform.parent.GetComponentInParent<AdventureView>();
     }
 
@@ -27,7 +28,7 @@ public class AdventureViewBackgroundObject : MonoBehaviour
             // if monster reaches the wizard, it is transported back
             if (transform.position.x <= 0)
             {
-                transform.position = StartingPosition;
+				transform.position += moveAmount*Vector3.right;
             }
         }
     }
