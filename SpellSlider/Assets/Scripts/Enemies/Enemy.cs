@@ -85,9 +85,8 @@ public abstract class Enemy : MonoBehaviour
 			//Debug.Log ("The jjjj");
 			
 			attackTimer -= Time.deltaTime;
-			if (attackTimer <= 0) {
+			if (attackTimer <= 0 ) {
 				//
-				Debug.Log("The enemy hit you!");
 				Wizard wizard = GameObject.Find ("Wizard").GetComponent<Wizard> ();
 				wizard.wizardHealth = wizard.wizardHealth - 10;
 				attackTimer = 2.0f;
