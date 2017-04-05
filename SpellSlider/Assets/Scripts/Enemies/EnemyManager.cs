@@ -9,13 +9,19 @@ public class EnemyManager : MonoBehaviour {
     public Enemy FireMonster;
     public Enemy IceMonster;
     public Enemy SandMonster;
+	public Enemy TreeMonster;
+	public Enemy WaterMonster;
+	public Enemy WindMonster;
 
     private Dictionary<EnemyType, Enemy> Enemies;
     public enum EnemyType {
         RockMonster,
         FireMonster,
         IceMonster,
-        SandMonster
+        SandMonster,
+		TreeMonster,
+		WaterMonster,
+		WindMonster
     }
 
     private void Awake()
@@ -30,6 +36,10 @@ public class EnemyManager : MonoBehaviour {
             Enemies.Add(EnemyType.FireMonster, FireMonster);
             Enemies.Add(EnemyType.IceMonster, IceMonster);
             Enemies.Add(EnemyType.SandMonster, SandMonster);
+			Enemies.Add(EnemyType.TreeMonster, TreeMonster);
+			Enemies.Add(EnemyType.WaterMonster, WaterMonster);
+			Enemies.Add(EnemyType.WindMonster, WindMonster);
+
         }
     }
 

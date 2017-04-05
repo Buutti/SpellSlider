@@ -61,4 +61,6 @@ MonoBehaviour:
     Count: 5
   - EnemyType: 2
     Count: 5
+  - EnemyType: 2
+    Count: 5
   Randomized: 1

@@ -2086,6 +2086,12 @@ MonoBehaviour:
     type: 2}
   SandMonster: {fileID: 114032748339482912, guid: 505155e67d9436542946291a2888e63e,
     type: 2}
+  TreeMonster: {fileID: 114348993646919056, guid: 1fcd665ab24f19f479630bc425896c5d,
+    type: 2}
+  WaterMonster: {fileID: 114755472466778196, guid: bd6ca0e96fde8b54c98c0ac6e979176e,
+    type: 2}
+  WindMonster: {fileID: 114693317463913770, guid: 4f3cbf24b2bb724438c2b9a1ab9c91f0,
+    type: 2}
 --- !u!4 &1168442328
 Transform:
   m_ObjectHideFlags: 0

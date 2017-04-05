@@ -9,7 +9,6 @@ public abstract class Enemy : MonoBehaviour
 	//Time that the enemy waits before attacking in seconds
 	//Used by basicAttackFunction
 	float attackTimer = 1.0f;
-	public Text SpellText;
 
     /// <summary>
     /// Return the number of patterns remaining
