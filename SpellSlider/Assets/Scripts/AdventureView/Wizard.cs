@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Wizard : MonoBehaviour {
 	
-	public float wizardHealth = 100;
+	public float wizardHealth = 1;
 	public bool alive = true;
     public float speed;
-
     public bool isMoving;
 
 	// Use this for initialization

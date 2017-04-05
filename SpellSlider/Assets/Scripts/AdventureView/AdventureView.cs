@@ -55,7 +55,9 @@ public class AdventureView : MonoBehaviour
     void Update()
     {
         //CheckAllEnemysDestroyed ();
-
+        if(wizard.wizardHealth <= 0) {
+            KillWizard();
+        }
     }
 
     /// <summary>
@@ -134,6 +136,15 @@ public class AdventureView : MonoBehaviour
         if (IsMoving) { StopMoving(); }
         // Trigger win animation for wizard
         wizard.GetComponent<Animator>().SetTrigger("Win");
+    }
+
+    public void KillWizard() {
+        wizard.GetComponent<Animator>().SetTrigger("Die");
+    }
+
+    public void LoseLevel() {
+        WinText.text = "YOU LOSE BABY!";
+        WinText.enabled = true;
     }
 
     public void CheckAllEnemysDestroyed()
