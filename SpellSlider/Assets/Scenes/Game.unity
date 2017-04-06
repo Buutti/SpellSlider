@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6fb2d3222758b4fb9c8cfd19269eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeightRatio: 0.3
+  HeightRatio: 0.29
 --- !u!1 &737367557
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,6 +3271,48 @@ SpriteRenderer:
   m_Color: {r: 0.9485294, g: 0.07671931, b: 0.67195493, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1823180537
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 78.79255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 54.107742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779347923803938, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31917ad000e21a1409bc2899672c3a25, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1833828766
 GameObject:
   m_ObjectHideFlags: 0

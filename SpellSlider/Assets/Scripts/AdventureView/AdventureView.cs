@@ -25,7 +25,7 @@ public class AdventureView : MonoBehaviour
         ///<summary>For randomizing enemy queue</summary>
         rng = new System.Random();
         // Load level
-        Level level = FindObjectOfType<Level>();
+        Level level = GameControl.Instance.CurrentLevel ;
         if (level != null)
         {
             currentLevel = level;

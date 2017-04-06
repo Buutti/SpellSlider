@@ -25,8 +25,8 @@ public class LevelManager : MonoBehaviour
     /// <param name="levelName">Name of the level to be loaded</param>
     public void LoadLevel(string levelName)
     {
-        Level level = Instantiate(GetLevel(levelName));
-        DontDestroyOnLoad(level);
+        GameControl.Instance.CurrentLevel = Instantiate(GetLevel(levelName));
+        DontDestroyOnLoad(GameControl.Instance.CurrentLevel);
         SceneManager.LoadScene("Game");
     }
 
