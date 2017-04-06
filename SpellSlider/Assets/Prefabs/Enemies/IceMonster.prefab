@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099b886e932ff9046a4a585a4c78c7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpellText: {fileID: 0}
+  GoldValue: 10
 --- !u!198 &198873055138635654
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public abstract class Enemy : MonoBehaviour
 {
     public List<SpellPattern> enemyPatterns { get; set; }
+    public float GoldValue;
+
 	//Time that the enemy waits before attacking in seconds
 	//Used by basicAttackFunction
 	float attackTimer = 1.0f;

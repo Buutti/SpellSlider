@@ -87,6 +87,7 @@ public class EnemyQueue : MonoBehaviour
     /// </summary>
     public void DestroyCurrentEnemy() {
         if(!IsEmpty()) {
+            GameControl.Instance.loot.Gold += CurrentEnemy.GoldValue;
             Destroy(EnemiesDrawn[0].gameObject);
             EnemiesDrawn.RemoveAt(0);
         }

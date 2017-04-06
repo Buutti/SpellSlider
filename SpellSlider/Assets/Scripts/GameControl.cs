@@ -6,6 +6,7 @@ public class GameControl : MonoBehaviour {
     public static GameControl Instance;
 
     public Level CurrentLevel;
+    public Loot loot;
 
 	// Use this for initialization
 	void Awake () {
@@ -18,9 +19,9 @@ public class GameControl : MonoBehaviour {
             Destroy(gameObject);
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+}
+
+public class Loot {
+    public float Gold;
 }

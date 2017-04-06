@@ -26,6 +26,7 @@ public class AdventureView : MonoBehaviour
         rng = new System.Random();
         // Load level
         Level level = GameControl.Instance.CurrentLevel ;
+        GameControl.Instance.loot = new Loot();
         if (level != null)
         {
             currentLevel = level;

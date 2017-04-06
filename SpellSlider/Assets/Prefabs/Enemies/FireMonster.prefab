@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100303468a03151488331af01ad8d828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpellText: {fileID: 0}
+  GoldValue: 10
 --- !u!198 &198681276450460540
 ParticleSystem:
   m_ObjectHideFlags: 1
