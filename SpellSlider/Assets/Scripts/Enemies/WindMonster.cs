@@ -14,7 +14,7 @@ public class WindMonster : Enemy {
 					PatternLine.OneTwo,
 					PatternLine.OneEight,
 					PatternLine.TwoThree,
-					PatternLine.ThreeEight
+					PatternLine.ThreeEight,
 
 				}
 			});

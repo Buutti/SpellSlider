@@ -114,7 +114,7 @@ public class PatternLine : IEquatable<PatternLine>
             return new PatternLine()
             {
                 Start = new Vector2(1, 1),
-                End = new Vector2(2, 2)
+                End = new Vector2(2, 3)
             };
         }
     }

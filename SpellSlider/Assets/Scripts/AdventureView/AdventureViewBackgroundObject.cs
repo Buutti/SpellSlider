@@ -15,7 +15,7 @@ public class AdventureViewBackgroundObject : MonoBehaviour
     void Start()
     {
         StartingPosition = transform.position;
-		Debug.Log ("STARTING AT " + transform.position.x + " OR " + transform.localPosition.x);
+		//Debug.Log ("STARTING AT " + transform.position.x + " OR " + transform.localPosition.x);
         adventureView = gameObject.transform.parent.GetComponentInParent<AdventureView>();
     }
 
