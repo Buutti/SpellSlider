@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4294106678452836}
   - component: {fileID: 114664995160089332}
   m_Layer: 0
-  m_Name: LEVEL_2_1
+  m_Name: LEVEL_6_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,18 +51,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef59dbe4ad04d148a171d6208e469d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: LEVEL_2_1
+  Name: LEVEL_6_1
   BackgroundMaterial: {fileID: 2100000, guid: b888eb99ceadf0b44bf003433e552607, type: 2}
   CeilingMaterial: {fileID: 2100000, guid: 92e72bc37d817b4409cf067f3b0716e4, type: 2}
   WallMaterial: {fileID: 2100000, guid: a42075275b89fb04390b007a587b330e, type: 2}
   GroundMaterial: {fileID: 2100000, guid: 92e72bc37d817b4409cf067f3b0716e4, type: 2}
   EnemyCountList:
-  - EnemyType: 2
-    Count: 5
-  - EnemyType: 5
-    Count: 5
-  - EnemyType: 6
+  - EnemyType: 1
     Count: 5
   - EnemyType: 0
+    Count: 5
+  - EnemyType: 6
     Count: 5
   Randomized: 1
